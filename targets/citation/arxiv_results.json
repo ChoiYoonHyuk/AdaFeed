@@ -1,0 +1,140 @@
+{
+  "protocol_sha256": "ca3fde5d637c4e1aef810534ae4edad0086347023db1243a6a3836c0a19c04ff",
+  "source_sha256": "473231308809453e0695e9544a2ba6d5ac6b624cbf42d1b6f37468dee460dee8",
+  "data_archive_sha256": "49f85c801589ecdcc52cfaca99693aaea7b8af16a9ac3f41dd85a5f3193fe276",
+  "split_sha256": "df02a4bbdb3fdbb9e86816a3bcd6c3ce9d54e6fc75f7b1410a24e4a816188b09",
+  "n": 169343,
+  "undirected_edges": 1157799,
+  "directed_edges": 1166243,
+  "classes": 40,
+  "isolates": 0,
+  "split_sizes": {
+    "train": 90941,
+    "valid": 29799,
+    "test": 48603
+  },
+  "features": {
+    "Local": 258,
+    "Spatial": 258,
+    "Mean+Local": 386,
+    "Mean+Spatial": 386,
+    "Mean": 258
+  },
+  "arms": {
+    "Local": {
+      "selected_lambda": 1e-05,
+      "val_accuracy": 0.49723145071982283,
+      "validation_grid": {
+        "1e-06": 0.49723145071982283,
+        "1e-05": 0.49723145071982283,
+        "0.0001": 0.4971643343736367,
+        "0.001": 0.4970301016812645,
+        "0.01": 0.4963924963924964,
+        "0.1": 0.49122453773616565,
+        "1.0": 0.46488137185811607
+      },
+      "validation_macro": 0.18176444069988823,
+      "test_accuracy": 0.47392136287883463,
+      "test_correct": 23034,
+      "test_macro": 0.17746195373948903
+    },
+    "Spatial": {
+      "selected_lambda": 0.0001,
+      "val_accuracy": 0.5798516728749287,
+      "validation_grid": {
+        "1e-06": 0.5798516728749287,
+        "1e-05": 0.5798516728749287,
+        "0.0001": 0.5798516728749287,
+        "0.001": 0.5798181147018356,
+        "0.01": 0.5793147421054398,
+        "0.1": 0.5745494815262258,
+        "1.0": 0.5409577502600759
+      },
+      "validation_macro": 0.23706766411826746,
+      "test_accuracy": 0.5679279056848343,
+      "test_correct": 27603,
+      "test_macro": 0.23479619687226264
+    },
+    "Mean+Local": {
+      "selected_lambda": 0.001,
+      "val_accuracy": 0.5979730863451793,
+      "validation_grid": {
+        "1e-06": 0.5978724118259002,
+        "1e-05": 0.5978724118259002,
+        "0.0001": 0.5979059699989933,
+        "0.001": 0.5979730863451793,
+        "0.01": 0.5974025974025974,
+        "0.1": 0.5901204738414041,
+        "1.0": 0.559381187288164
+      },
+      "validation_macro": 0.24801886361243458,
+      "test_accuracy": 0.5822068596588688,
+      "test_correct": 28297,
+      "test_macro": 0.2436011920187548
+    },
+    "Mean+Spatial": {
+      "selected_lambda": 0.001,
+      "val_accuracy": 0.5984429007684822,
+      "validation_grid": {
+        "1e-06": 0.598342226249203,
+        "1e-05": 0.598342226249203,
+        "0.0001": 0.598375784422296,
+        "0.001": 0.5984429007684822,
+        "0.01": 0.5981408772106447,
+        "0.1": 0.5945501526896876,
+        "1.0": 0.566495519983892
+      },
+      "validation_macro": 0.24664224754010716,
+      "test_accuracy": 0.58490216653293,
+      "test_correct": 28428,
+      "test_macro": 0.24184366335481453
+    },
+    "Mean": {
+      "selected_lambda": 1e-05,
+      "val_accuracy": 0.5956240142286654,
+      "validation_grid": {
+        "1e-06": 0.5956240142286654,
+        "1e-05": 0.5956240142286654,
+        "0.0001": 0.5955568978824792,
+        "0.001": 0.5954562233632001,
+        "0.01": 0.5948521762475251,
+        "0.1": 0.5889459377831471,
+        "1.0": 0.5532400416121346
+      },
+      "validation_macro": 0.24522441577475035,
+      "test_accuracy": 0.5793675287533692,
+      "test_correct": 28159,
+      "test_macro": 0.24006150720268532
+    }
+  },
+  "paired": {
+    "Local__Spatial": {
+      "improved": 6652,
+      "worsened": 2083,
+      "tied_correct": 20951,
+      "tied_wrong": 18917,
+      "delta_accuracy": 0.09400654280599968,
+      "delta_macro": 0.057334243132773605
+    },
+    "Mean+Local__Mean+Spatial": {
+      "improved": 1231,
+      "worsened": 1100,
+      "tied_correct": 27197,
+      "tied_wrong": 19075,
+      "delta_accuracy": 0.0026953068740612762,
+      "delta_macro": -0.001757528663940272
+    },
+    "Mean__Mean+Spatial": {
+      "improved": 1017,
+      "worsened": 748,
+      "tied_correct": 27411,
+      "tied_wrong": 19427,
+      "delta_accuracy": 0.005534637779560869,
+      "delta_macro": 0.001782156152129205
+    }
+  },
+  "cubic_identity_max_abs_error": 4.440892098500626e-16,
+  "gpu": "NVIDIA H100 PCIe",
+  "torch": "2.11.0+cu128",
+  "cuda": "12.8"
+}

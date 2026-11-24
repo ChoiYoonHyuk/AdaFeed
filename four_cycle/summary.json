@@ -1,0 +1,147 @@
+{
+  "commit": "f514487625b42406dcd85ca55ac66436606f9aac",
+  "dataset_sha256": "758ae12bd05ced3c1ba609d81f0d0dbdc1d227d486e3f2c1c517b47fe7dad9b4",
+  "fits": {
+    "root_local": {
+      "coefficients": [
+        -0.07859951295084391,
+        -0.828772207308551,
+        -0.08338560775779359,
+        0.11537852699960055,
+        0.03433298329816557,
+        0.35364097200330047,
+        -0.10044531297652017
+      ],
+      "train_rank": 6
+    },
+    "spatial": {
+      "coefficients": [
+        2.490331887584799e-13,
+        0.5000000000000724,
+        0.4999999999999407,
+        0.5000000000000077,
+        0.500000000000003,
+        0.4999999999999995,
+        -0.5000000000000011
+      ],
+      "train_rank": 7
+    }
+  },
+  "gpu": "NVIDIA H100 PCIe",
+  "numpy_version": "1.26.4",
+  "program_sha256": "9abf7f4202686c2cb9218c23dc9731d8563d2e752e530a665b212f95bda73f17",
+  "protocol_sha256": "64cd02abb6cad240993fc0c943c976bb559eebe97054fe2a02815f0fc1c2ab4a",
+  "splits": {
+    "test": {
+      "formula_exact_roots": 46695,
+      "formula_mae": 0.0,
+      "graphs": 2500,
+      "max_target": 22,
+      "neighbor_control_mae": 0.0,
+      "nonzero_contrast_roots": 42454,
+      "nonzero_edge_energy_graphs": 2500,
+      "omit_delta_graph_total_mae": 0.0,
+      "omit_delta_node_mae": 1.5788842488489132,
+      "order_max": 30,
+      "order_min": 10,
+      "paired_graph_interval": [
+        0.46597509719668173,
+        0.47602671483416664
+      ],
+      "paired_node_mae_improvement": 0.4709260792163639,
+      "positive_roots": 29142,
+      "root_local": {
+        "ambiguous_groups": 508,
+        "groups": 756,
+        "largest_ambiguous_group": {
+          "features": [
+            1,
+            2,
+            4,
+            8,
+            0,
+            9,
+            20
+          ],
+          "label_counts": {
+            "0": 1571,
+            "1": 50
+          }
+        },
+        "min_sum_absolute_error": 11436,
+        "normalized_mae": 0.15451511684441277,
+        "ols_mae": 0.4709260792164731,
+        "roots_in_ambiguous_groups": 41322,
+        "within_tuple_min_mae": 0.24490844844201734
+      },
+      "roots": 46695,
+      "spatial": {
+        "ambiguous_groups": 0,
+        "groups": 1619,
+        "min_sum_absolute_error": 0,
+        "normalized_mae": 3.581330726083019e-14,
+        "ols_mae": 1.0915061721177775e-13,
+        "roots_in_ambiguous_groups": 0,
+        "within_tuple_min_mae": 0.0
+      },
+      "target_sum": 106916,
+      "uniform_contrast_absmax": 0,
+      "weighted_identity_absmax": 0
+    },
+    "train": {
+      "formula_exact_roots": 28485,
+      "formula_mae": 0.0,
+      "graphs": 1500,
+      "max_target": 21,
+      "neighbor_control_mae": 0.0,
+      "nonzero_contrast_roots": 25822,
+      "nonzero_edge_energy_graphs": 1499,
+      "omit_delta_graph_total_mae": 0.0,
+      "omit_delta_node_mae": 1.5809022292434616,
+      "order_max": 30,
+      "order_min": 10,
+      "positive_roots": 17546,
+      "root_local": {
+        "normalized_mae": 0.15234381623659715,
+        "ols_mae": 0.4643084608052689
+      },
+      "roots": 28485,
+      "spatial": {
+        "normalized_mae": 3.584076460790013e-14,
+        "ols_mae": 1.0923430080899077e-13
+      },
+      "target_sum": 62328,
+      "uniform_contrast_absmax": 0,
+      "weighted_identity_absmax": 0
+    },
+    "validation": {
+      "formula_exact_roots": 18820,
+      "formula_mae": 0.0,
+      "graphs": 1000,
+      "max_target": 20,
+      "neighbor_control_mae": 0.0,
+      "nonzero_contrast_roots": 17192,
+      "nonzero_edge_energy_graphs": 1000,
+      "omit_delta_graph_total_mae": 0.0,
+      "omit_delta_node_mae": 1.598087141339001,
+      "order_max": 30,
+      "order_min": 10,
+      "positive_roots": 11737,
+      "root_local": {
+        "normalized_mae": 0.15314960941133898,
+        "ols_mae": 0.46676433067865264
+      },
+      "roots": 18820,
+      "spatial": {
+        "normalized_mae": 3.601621476687183e-14,
+        "ols_mae": 1.09769032019437e-13
+      },
+      "target_sum": 42764,
+      "uniform_contrast_absmax": 0,
+      "weighted_identity_absmax": 0
+    }
+  },
+  "target_index": 1,
+  "torch_version": "2.11.0+cu128",
+  "training_plus_validation_target_sd": 3.047767032986596
+}
