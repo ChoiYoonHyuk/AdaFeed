@@ -1,0 +1,658 @@
+{
+  "release_sha256": "6975d172d27aedcdf4eb2c747450ede7928c111caeb2689fbc67e6b62fbd5562",
+  "target_pair_ids": [
+    260,
+    261,
+    262,
+    263,
+    264,
+    266,
+    267,
+    269,
+    270,
+    275,
+    276,
+    277,
+    280,
+    282,
+    286,
+    287,
+    288,
+    290,
+    292,
+    293,
+    295,
+    298,
+    300,
+    301,
+    304,
+    306,
+    308,
+    310,
+    312,
+    313,
+    314,
+    316,
+    318,
+    319
+  ],
+  "algorithm": "exact integer power traces and joint pair-entry sequences, followed by common vertex-color refinement",
+  "target_count": 34,
+  "checked_count": 34,
+  "upper_certified_count": 34,
+  "rows": [
+    {
+      "id": 260,
+      "n": 74,
+      "walk_lcm": 90,
+      "max_trace_power": 74,
+      "max_pair_entry_power": 73,
+      "pair_classes_after_each_operator": [
+        806,
+        806,
+        806
+      ],
+      "joint_vertex_classes_by_round": [
+        1,
+        27,
+        27
+      ],
+      "upper_certified": true
+    },
+    {
+      "id": 261,
+      "n": 74,
+      "walk_lcm": 90,
+      "max_trace_power": 74,
+      "max_pair_entry_power": 73,
+      "pair_classes_after_each_operator": [
+        455,
+        455,
+        455
+      ],
+      "joint_vertex_classes_by_round": [
+        1,
+        17,
+        17
+      ],
+      "upper_certified": true
+    },
+    {
+      "id": 262,
+      "n": 58,
+      "walk_lcm": 6,
+      "max_trace_power": 58,
+      "max_pair_entry_power": 57,
+      "pair_classes_after_each_operator": [
+        211,
+        211,
+        211
+      ],
+      "joint_vertex_classes_by_round": [
+        1,
+        11,
+        11
+      ],
+      "upper_certified": true
+    },
+    {
+      "id": 263,
+      "n": 74,
+      "walk_lcm": 90,
+      "max_trace_power": 74,
+      "max_pair_entry_power": 73,
+      "pair_classes_after_each_operator": [
+        816,
+        816,
+        816
+      ],
+      "joint_vertex_classes_by_round": [
+        1,
+        27,
+        27
+      ],
+      "upper_certified": true
+    },
+    {
+      "id": 264,
+      "n": 90,
+      "walk_lcm": 90,
+      "max_trace_power": 90,
+      "max_pair_entry_power": 89,
+      "pair_classes_after_each_operator": [
+        484,
+        484,
+        484
+      ],
+      "joint_vertex_classes_by_round": [
+        1,
+        15,
+        15
+      ],
+      "upper_certified": true
+    },
+    {
+      "id": 266,
+      "n": 104,
+      "walk_lcm": 1530,
+      "max_trace_power": 104,
+      "max_pair_entry_power": 103,
+      "pair_classes_after_each_operator": [
+        517,
+        517,
+        517
+      ],
+      "joint_vertex_classes_by_round": [
+        1,
+        19,
+        19
+      ],
+      "upper_certified": true
+    },
+    {
+      "id": 267,
+      "n": 60,
+      "walk_lcm": 60,
+      "max_trace_power": 60,
+      "max_pair_entry_power": 59,
+      "pair_classes_after_each_operator": [
+        747,
+        747,
+        747
+      ],
+      "joint_vertex_classes_by_round": [
+        1,
+        25,
+        25
+      ],
+      "upper_certified": true
+    },
+    {
+      "id": 269,
+      "n": 70,
+      "walk_lcm": 180,
+      "max_trace_power": 70,
+      "max_pair_entry_power": 69,
+      "pair_classes_after_each_operator": [
+        502,
+        502,
+        502
+      ],
+      "joint_vertex_classes_by_round": [
+        1,
+        19,
+        19
+      ],
+      "upper_certified": true
+    },
+    {
+      "id": 270,
+      "n": 58,
+      "walk_lcm": 6,
+      "max_trace_power": 58,
+      "max_pair_entry_power": 57,
+      "pair_classes_after_each_operator": [
+        318,
+        318,
+        318
+      ],
+      "joint_vertex_classes_by_round": [
+        1,
+        13,
+        13
+      ],
+      "upper_certified": true
+    },
+    {
+      "id": 275,
+      "n": 84,
+      "walk_lcm": 180,
+      "max_trace_power": 84,
+      "max_pair_entry_power": 83,
+      "pair_classes_after_each_operator": [
+        937,
+        937,
+        937
+      ],
+      "joint_vertex_classes_by_round": [
+        1,
+        29,
+        29
+      ],
+      "upper_certified": true
+    },
+    {
+      "id": 276,
+      "n": 66,
+      "walk_lcm": 20,
+      "max_trace_power": 66,
+      "max_pair_entry_power": 65,
+      "pair_classes_after_each_operator": [
+        121,
+        121,
+        121
+      ],
+      "joint_vertex_classes_by_round": [
+        1,
+        5,
+        5
+      ],
+      "upper_certified": true
+    },
+    {
+      "id": 277,
+      "n": 48,
+      "walk_lcm": 60,
+      "max_trace_power": 48,
+      "max_pair_entry_power": 47,
+      "pair_classes_after_each_operator": [
+        231,
+        231,
+        231
+      ],
+      "joint_vertex_classes_by_round": [
+        1,
+        10,
+        10
+      ],
+      "upper_certified": true
+    },
+    {
+      "id": 280,
+      "n": 96,
+      "walk_lcm": 102,
+      "max_trace_power": 96,
+      "max_pair_entry_power": 95,
+      "pair_classes_after_each_operator": [
+        449,
+        449,
+        449
+      ],
+      "joint_vertex_classes_by_round": [
+        1,
+        15,
+        15
+      ],
+      "upper_certified": true
+    },
+    {
+      "id": 282,
+      "n": 68,
+      "walk_lcm": 60,
+      "max_trace_power": 68,
+      "max_pair_entry_power": 67,
+      "pair_classes_after_each_operator": [
+        174,
+        174,
+        174
+      ],
+      "joint_vertex_classes_by_round": [
+        1,
+        8,
+        8
+      ],
+      "upper_certified": true
+    },
+    {
+      "id": 286,
+      "n": 86,
+      "walk_lcm": 180,
+      "max_trace_power": 86,
+      "max_pair_entry_power": 85,
+      "pair_classes_after_each_operator": [
+        723,
+        723,
+        723
+      ],
+      "joint_vertex_classes_by_round": [
+        1,
+        24,
+        24
+      ],
+      "upper_certified": true
+    },
+    {
+      "id": 287,
+      "n": 52,
+      "walk_lcm": 6,
+      "max_trace_power": 52,
+      "max_pair_entry_power": 51,
+      "pair_classes_after_each_operator": [
+        130,
+        130,
+        130
+      ],
+      "joint_vertex_classes_by_round": [
+        1,
+        6,
+        6
+      ],
+      "upper_certified": true
+    },
+    {
+      "id": 288,
+      "n": 86,
+      "walk_lcm": 180,
+      "max_trace_power": 86,
+      "max_pair_entry_power": 85,
+      "pair_classes_after_each_operator": [
+        977,
+        977,
+        977
+      ],
+      "joint_vertex_classes_by_round": [
+        1,
+        29,
+        29
+      ],
+      "upper_certified": true
+    },
+    {
+      "id": 290,
+      "n": 58,
+      "walk_lcm": 6,
+      "max_trace_power": 58,
+      "max_pair_entry_power": 57,
+      "pair_classes_after_each_operator": [
+        325,
+        325,
+        325
+      ],
+      "joint_vertex_classes_by_round": [
+        1,
+        13,
+        13
+      ],
+      "upper_certified": true
+    },
+    {
+      "id": 292,
+      "n": 54,
+      "walk_lcm": 60,
+      "max_trace_power": 54,
+      "max_pair_entry_power": 53,
+      "pair_classes_after_each_operator": [
+        271,
+        271,
+        271
+      ],
+      "joint_vertex_classes_by_round": [
+        1,
+        13,
+        13
+      ],
+      "upper_certified": true
+    },
+    {
+      "id": 293,
+      "n": 98,
+      "walk_lcm": 1020,
+      "max_trace_power": 98,
+      "max_pair_entry_power": 97,
+      "pair_classes_after_each_operator": [
+        726,
+        726,
+        726
+      ],
+      "joint_vertex_classes_by_round": [
+        1,
+        24,
+        24
+      ],
+      "upper_certified": true
+    },
+    {
+      "id": 295,
+      "n": 76,
+      "walk_lcm": 180,
+      "max_trace_power": 76,
+      "max_pair_entry_power": 75,
+      "pair_classes_after_each_operator": [
+        415,
+        415,
+        415
+      ],
+      "joint_vertex_classes_by_round": [
+        1,
+        17,
+        17
+      ],
+      "upper_certified": true
+    },
+    {
+      "id": 298,
+      "n": 58,
+      "walk_lcm": 6,
+      "max_trace_power": 58,
+      "max_pair_entry_power": 57,
+      "pair_classes_after_each_operator": [
+        306,
+        306,
+        306
+      ],
+      "joint_vertex_classes_by_round": [
+        1,
+        16,
+        19,
+        19
+      ],
+      "upper_certified": true
+    },
+    {
+      "id": 300,
+      "n": 72,
+      "walk_lcm": 20,
+      "max_trace_power": 72,
+      "max_pair_entry_power": 71,
+      "pair_classes_after_each_operator": [
+        285,
+        285,
+        285
+      ],
+      "joint_vertex_classes_by_round": [
+        1,
+        13,
+        13
+      ],
+      "upper_certified": true
+    },
+    {
+      "id": 301,
+      "n": 54,
+      "walk_lcm": 60,
+      "max_trace_power": 54,
+      "max_pair_entry_power": 53,
+      "pair_classes_after_each_operator": [
+        588,
+        588,
+        588
+      ],
+      "joint_vertex_classes_by_round": [
+        1,
+        22,
+        22
+      ],
+      "upper_certified": true
+    },
+    {
+      "id": 304,
+      "n": 76,
+      "walk_lcm": 180,
+      "max_trace_power": 76,
+      "max_pair_entry_power": 75,
+      "pair_classes_after_each_operator": [
+        879,
+        879,
+        879
+      ],
+      "joint_vertex_classes_by_round": [
+        1,
+        27,
+        27
+      ],
+      "upper_certified": true
+    },
+    {
+      "id": 306,
+      "n": 54,
+      "walk_lcm": 60,
+      "max_trace_power": 54,
+      "max_pair_entry_power": 53,
+      "pair_classes_after_each_operator": [
+        300,
+        300,
+        300
+      ],
+      "joint_vertex_classes_by_round": [
+        1,
+        12,
+        12
+      ],
+      "upper_certified": true
+    },
+    {
+      "id": 308,
+      "n": 76,
+      "walk_lcm": 180,
+      "max_trace_power": 76,
+      "max_pair_entry_power": 75,
+      "pair_classes_after_each_operator": [
+        634,
+        634,
+        634
+      ],
+      "joint_vertex_classes_by_round": [
+        1,
+        22,
+        22
+      ],
+      "upper_certified": true
+    },
+    {
+      "id": 310,
+      "n": 60,
+      "walk_lcm": 60,
+      "max_trace_power": 60,
+      "max_pair_entry_power": 59,
+      "pair_classes_after_each_operator": [
+        729,
+        729,
+        729
+      ],
+      "joint_vertex_classes_by_round": [
+        1,
+        25,
+        25
+      ],
+      "upper_certified": true
+    },
+    {
+      "id": 312,
+      "n": 74,
+      "walk_lcm": 90,
+      "max_trace_power": 74,
+      "max_pair_entry_power": 73,
+      "pair_classes_after_each_operator": [
+        574,
+        574,
+        574
+      ],
+      "joint_vertex_classes_by_round": [
+        1,
+        22,
+        22
+      ],
+      "upper_certified": true
+    },
+    {
+      "id": 313,
+      "n": 88,
+      "walk_lcm": 102,
+      "max_trace_power": 88,
+      "max_pair_entry_power": 87,
+      "pair_classes_after_each_operator": [
+        395,
+        395,
+        395
+      ],
+      "joint_vertex_classes_by_round": [
+        1,
+        15,
+        15
+      ],
+      "upper_certified": true
+    },
+    {
+      "id": 314,
+      "n": 60,
+      "walk_lcm": 60,
+      "max_trace_power": 60,
+      "max_pair_entry_power": 59,
+      "pair_classes_after_each_operator": [
+        511,
+        511,
+        511
+      ],
+      "joint_vertex_classes_by_round": [
+        1,
+        20,
+        20
+      ],
+      "upper_certified": true
+    },
+    {
+      "id": 316,
+      "n": 72,
+      "walk_lcm": 20,
+      "max_trace_power": 72,
+      "max_pair_entry_power": 71,
+      "pair_classes_after_each_operator": [
+        419,
+        419,
+        419
+      ],
+      "joint_vertex_classes_by_round": [
+        1,
+        14,
+        14
+      ],
+      "upper_certified": true
+    },
+    {
+      "id": 318,
+      "n": 60,
+      "walk_lcm": 60,
+      "max_trace_power": 60,
+      "max_pair_entry_power": 59,
+      "pair_classes_after_each_operator": [
+        729,
+        729,
+        729
+      ],
+      "joint_vertex_classes_by_round": [
+        1,
+        25,
+        25
+      ],
+      "upper_certified": true
+    },
+    {
+      "id": 319,
+      "n": 60,
+      "walk_lcm": 60,
+      "max_trace_power": 60,
+      "max_pair_entry_power": 59,
+      "pair_classes_after_each_operator": [
+        346,
+        346,
+        346
+      ],
+      "joint_vertex_classes_by_round": [
+        1,
+        15,
+        15
+      ],
+      "upper_certified": true
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "nodes": 4096,
+  "edges": 11007,
+  "root": 36138,
+  "k": 24,
+  "block": 128,
+  "gate_seed": 1729,
+  "ids_sha256": "6f7705fd3ae74264aef94257a6d4e88c247106a5728ee2cfeb1c245cb38679a6",
+  "dmax": 4045.0,
+  "device": "NVIDIA H100 PCIe",
+  "torch": "2.11.0+cu128",
+  "cuda": "12.8",
+  "max_abs_error": [
+    5.10702591327572e-15,
+    2.992051051364797e-14
+  ],
+  "trials": {
+    "sparse": [
+      {
+        "seconds": 0.06352497823536396,
+        "extra_torch_peak_MiB": 17.93994140625,
+        "other_compute_contexts": 0
+      },
+      {
+        "seconds": 0.06496748887002468,
+        "extra_torch_peak_MiB": 17.93994140625,
+        "other_compute_contexts": 0
+      },
+      {
+        "seconds": 0.062489680014550686,
+        "extra_torch_peak_MiB": 17.93994140625,
+        "other_compute_contexts": 0
+      }
+    ],
+    "eigh": [
+      {
+        "seconds": 0.3333537960425019,
+        "extra_torch_peak_MiB": 773.03369140625,
+        "other_compute_contexts": 0
+      },
+      {
+        "seconds": 0.33562623243778944,
+        "extra_torch_peak_MiB": 773.03369140625,
+        "other_compute_contexts": 0
+      },
+      {
+        "seconds": 0.33318442199379206,
+        "extra_torch_peak_MiB": 773.03369140625,
+        "other_compute_contexts": 0
+      }
+    ]
+  },
+  "aggregate": {
+    "sparse": {
+      "median_seconds": 0.06352497823536396,
+      "peak_MiB": 17.93994140625
+    },
+    "eigh": {
+      "median_seconds": 0.3333537960425019,
+      "peak_MiB": 773.03369140625
+    }
+  },
+  "protocol_sha256": "ca3fde5d637c4e1aef810534ae4edad0086347023db1243a6a3836c0a19c04ff",
+  "source_sha256": "b57b1b599e04a3708e8de6d518765c5116000442ca5dc9b47b90f9bce6102d8a"
+}

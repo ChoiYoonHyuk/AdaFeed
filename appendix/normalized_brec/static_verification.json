@@ -1,0 +1,49 @@
+{
+  "source_sha256": "6975d172d27aedcdf4eb2c747450ede7928c111caeb2689fbc67e6b62fbd5562",
+  "script_sha256": "877abc10cf1c3a7ec3d5115428e44704a073a279e8ff7e0e705dffd57063e015",
+  "coordinates_checked_against_exact_fractions": 2304,
+  "static_checks": [
+    {
+      "pair": 273,
+      "orders": [
+        50,
+        50
+      ],
+      "common_lcm": 6,
+      "max_power": 99,
+      "distinct_root_profiles": [
+        16,
+        16
+      ],
+      "equal_integer_profile_multisets": true
+    },
+    {
+      "pair": 296,
+      "orders": [
+        62,
+        62
+      ],
+      "common_lcm": 20,
+      "max_power": 123,
+      "distinct_root_profiles": [
+        10,
+        10
+      ],
+      "equal_integer_profile_multisets": true
+    },
+    {
+      "pair": 307,
+      "orders": [
+        50,
+        50
+      ],
+      "common_lcm": 6,
+      "max_power": 99,
+      "distinct_root_profiles": [
+        9,
+        9
+      ],
+      "equal_integer_profile_multisets": true
+    }
+  ]
+}

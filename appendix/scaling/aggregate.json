@@ -1,0 +1,463 @@
+{
+  "design": {
+    "dataset": "ogbn-arxiv",
+    "seed": 20261122,
+    "root": 36138,
+    "input_sha256": "47629e986116407d27eff4c9d2e923f06bf5da5c85cbae93b660f530bc9355df",
+    "n_original": 169343,
+    "m_clean": 1157799,
+    "largest_component": 169343,
+    "graphs": {
+      "128": {
+        "edges": 470,
+        "ids_sha256": "84b429f5aa31719c90bbdef5e01371b4698761ed21dd4fd0f4a9fa9552987da1"
+      },
+      "256": {
+        "edges": 633,
+        "ids_sha256": "ec6e73affcb8e42b0185632f15c78acb30f0df80b5b64a56db7a636dce034e1d"
+      },
+      "512": {
+        "edges": 994,
+        "ids_sha256": "396b66eb63a44c141e14dd4ba16e6c5f320386bd62ffcb7d3c63a48c7f7dd756"
+      },
+      "1024": {
+        "edges": 1864,
+        "ids_sha256": "7f9d7052e60dd742c23ed6110a0418f8f80ed0b3aa3653d61baf0538e9cef384"
+      },
+      "2048": {
+        "edges": 4104,
+        "ids_sha256": "84e596ee8935d10e611c61b0d36e3883df031a72229d31840f9273da83a7d257"
+      },
+      "4096": {
+        "edges": 11007,
+        "ids_sha256": "6f7705fd3ae74264aef94257a6d4e88c247106a5728ee2cfeb1c245cb38679a6"
+      },
+      "8192": {
+        "edges": 32979,
+        "ids_sha256": "f1f9731dda2c095f517e59fc74955db2a9cb452070f7c696335a6e4c50c6e963"
+      },
+      "16384": {
+        "edges": 152510,
+        "ids_sha256": "42425dd6d4633c4f4645aa630cf44d7c1f9f08c724be744d2c9f79bbad9382f3"
+      }
+    }
+  },
+  "device": "NVIDIA H100 PCIe",
+  "torch": "2.11.0+cu128",
+  "cuda": "12.8",
+  "driver": "570.211.01",
+  "block": 128,
+  "k": 24,
+  "checks": {
+    "evd_bank_max_abs_error": 1.3711254354120683e-14,
+    "numerical_partition_permutation_match": true,
+    "test_vertices": 128
+  },
+  "records": [
+    {
+      "n": 512,
+      "method": "feedback",
+      "trials": [
+        {
+          "seconds": 0.008852006867527962,
+          "torch_peak_MiB": 2.7333984375,
+          "device_delta_MiB": 2.0,
+          "host_delta_MiB": 0.16015625,
+          "checksum": -464.1337920672604
+        },
+        {
+          "seconds": 0.008734184317290783,
+          "torch_peak_MiB": 2.7333984375,
+          "device_delta_MiB": 2.0,
+          "host_delta_MiB": 0.015625,
+          "checksum": -464.1337920672604
+        },
+        {
+          "seconds": 0.008560588583350182,
+          "torch_peak_MiB": 2.7333984375,
+          "device_delta_MiB": 2.0,
+          "host_delta_MiB": 0.01171875,
+          "checksum": -464.1337920672604
+        }
+      ]
+    },
+    {
+      "n": 512,
+      "method": "EVD",
+      "trials": [
+        {
+          "seconds": 0.025745523162186146,
+          "torch_peak_MiB": 13.50537109375,
+          "device_delta_MiB": 22.0,
+          "host_delta_MiB": 25.734375,
+          "trace_square_error": 4.547473508864641e-13
+        },
+        {
+          "seconds": 0.005408168770372868,
+          "torch_peak_MiB": 13.50537109375,
+          "device_delta_MiB": 20.0,
+          "host_delta_MiB": 0.0078125,
+          "trace_square_error": 4.547473508864641e-13
+        },
+        {
+          "seconds": 0.005287011153995991,
+          "torch_peak_MiB": 13.50537109375,
+          "device_delta_MiB": 20.0,
+          "host_delta_MiB": 0.0078125,
+          "trace_square_error": 4.547473508864641e-13
+        }
+      ]
+    },
+    {
+      "n": 512,
+      "method": "EPWL",
+      "trials": [
+        {
+          "seconds": 0.08502500876784325,
+          "torch_peak_MiB": 24.07568359375,
+          "device_delta_MiB": 40.0,
+          "host_delta_MiB": 0.15625,
+          "projectors": 127,
+          "rounds": 2,
+          "classes": 135
+        },
+        {
+          "seconds": 0.08419799990952015,
+          "torch_peak_MiB": 24.07568359375,
+          "device_delta_MiB": 40.0,
+          "host_delta_MiB": 0.0078125,
+          "projectors": 127,
+          "rounds": 2,
+          "classes": 135
+        },
+        {
+          "seconds": 0.08397500216960907,
+          "torch_peak_MiB": 24.07568359375,
+          "device_delta_MiB": 40.0,
+          "host_delta_MiB": 0.0078125,
+          "projectors": 127,
+          "rounds": 2,
+          "classes": 135
+        }
+      ]
+    },
+    {
+      "n": 1024,
+      "method": "feedback",
+      "trials": [
+        {
+          "seconds": 0.01669058669358492,
+          "torch_peak_MiB": 5.4599609375,
+          "device_delta_MiB": 4.0,
+          "host_delta_MiB": 0.00390625,
+          "checksum": -941.039091978407
+        },
+        {
+          "seconds": 0.016431461088359356,
+          "torch_peak_MiB": 5.4599609375,
+          "device_delta_MiB": 4.0,
+          "host_delta_MiB": 0.00390625,
+          "checksum": -941.039091978407
+        },
+        {
+          "seconds": 0.01650627702474594,
+          "torch_peak_MiB": 5.4599609375,
+          "device_delta_MiB": 4.0,
+          "host_delta_MiB": 0.00390625,
+          "checksum": -941.039091978407
+        }
+      ]
+    },
+    {
+      "n": 1024,
+      "method": "EVD",
+      "trials": [
+        {
+          "seconds": 0.011758294887840748,
+          "torch_peak_MiB": 50.00830078125,
+          "device_delta_MiB": 54.0,
+          "host_delta_MiB": 0.00390625,
+          "trace_square_error": 2.2737367544323206e-12
+        },
+        {
+          "seconds": 0.011461370624601841,
+          "torch_peak_MiB": 50.00830078125,
+          "device_delta_MiB": 54.0,
+          "host_delta_MiB": 0.0078125,
+          "trace_square_error": 2.2737367544323206e-12
+        },
+        {
+          "seconds": 0.011447443626821041,
+          "torch_peak_MiB": 50.00830078125,
+          "device_delta_MiB": 54.0,
+          "host_delta_MiB": 0.00390625,
+          "trace_square_error": 2.2737367544323206e-12
+        }
+      ]
+    },
+    {
+      "n": 1024,
+      "method": "EPWL",
+      "trials": [
+        {
+          "seconds": 0.223049889318645,
+          "torch_peak_MiB": 96.24658203125,
+          "device_delta_MiB": 128.0,
+          "host_delta_MiB": 0.03515625,
+          "projectors": 235,
+          "rounds": 2,
+          "classes": 279
+        },
+        {
+          "seconds": 0.2215983523055911,
+          "torch_peak_MiB": 96.24658203125,
+          "device_delta_MiB": 128.0,
+          "host_delta_MiB": 0.0078125,
+          "projectors": 235,
+          "rounds": 2,
+          "classes": 279
+        },
+        {
+          "seconds": 0.2264707675203681,
+          "torch_peak_MiB": 96.24658203125,
+          "device_delta_MiB": 128.0,
+          "host_delta_MiB": 0.00390625,
+          "projectors": 235,
+          "rounds": 2,
+          "classes": 279
+        }
+      ]
+    },
+    {
+      "n": 2048,
+      "method": "feedback",
+      "trials": [
+        {
+          "seconds": 0.03236692491918802,
+          "torch_peak_MiB": 10.92822265625,
+          "device_delta_MiB": 20.0,
+          "host_delta_MiB": 0.00390625,
+          "checksum": -1888.282946563876
+        },
+        {
+          "seconds": 0.03219065349549055,
+          "torch_peak_MiB": 10.92822265625,
+          "device_delta_MiB": 20.0,
+          "host_delta_MiB": 0.00390625,
+          "checksum": -1888.282946563876
+        },
+        {
+          "seconds": 0.032047840766608715,
+          "torch_peak_MiB": 10.92822265625,
+          "device_delta_MiB": 20.0,
+          "host_delta_MiB": 0.00390625,
+          "checksum": -1888.282946563876
+        }
+      ]
+    },
+    {
+      "n": 2048,
+      "method": "EVD",
+      "trials": [
+        {
+          "seconds": 0.031195524148643017,
+          "torch_peak_MiB": 194.25244140625,
+          "device_delta_MiB": 196.0,
+          "host_delta_MiB": 0.00390625,
+          "trace_square_error": 3.637978807091713e-12
+        },
+        {
+          "seconds": 0.030968119390308857,
+          "torch_peak_MiB": 194.25244140625,
+          "device_delta_MiB": 196.0,
+          "host_delta_MiB": 0.00390625,
+          "trace_square_error": 3.637978807091713e-12
+        },
+        {
+          "seconds": 0.03099055215716362,
+          "torch_peak_MiB": 194.25244140625,
+          "device_delta_MiB": 196.0,
+          "host_delta_MiB": 0.00390625,
+          "trace_square_error": 3.637978807091713e-12
+        }
+      ]
+    },
+    {
+      "n": 2048,
+      "method": "EPWL",
+      "trials": [
+        {
+          "seconds": 1.7584368167445064,
+          "torch_peak_MiB": 384.92138671875,
+          "device_delta_MiB": 392.0,
+          "host_delta_MiB": 0.01171875,
+          "projectors": 648,
+          "rounds": 2,
+          "classes": 801
+        }
+      ]
+    },
+    {
+      "n": 4096,
+      "method": "feedback",
+      "trials": [
+        {
+          "seconds": 0.06598172336816788,
+          "torch_peak_MiB": 21.93994140625,
+          "device_delta_MiB": 22.0,
+          "host_delta_MiB": 0.00390625,
+          "checksum": -3779.7710170712717
+        },
+        {
+          "seconds": 0.06582699716091156,
+          "torch_peak_MiB": 21.93994140625,
+          "device_delta_MiB": 22.0,
+          "host_delta_MiB": 0.00390625,
+          "checksum": -3779.7710170712717
+        },
+        {
+          "seconds": 0.06389348674565554,
+          "torch_peak_MiB": 21.93994140625,
+          "device_delta_MiB": 22.0,
+          "host_delta_MiB": 0.00390625,
+          "checksum": -3779.7710170712717
+        }
+      ]
+    },
+    {
+      "n": 4096,
+      "method": "EVD",
+      "trials": [
+        {
+          "seconds": 0.16607277747243643,
+          "torch_peak_MiB": 772.25244140625,
+          "device_delta_MiB": 774.0,
+          "host_delta_MiB": 0.00390625,
+          "trace_square_error": 7.275957614183426e-12
+        },
+        {
+          "seconds": 0.16556233167648315,
+          "torch_peak_MiB": 772.25244140625,
+          "device_delta_MiB": 774.0,
+          "host_delta_MiB": 0.00390625,
+          "trace_square_error": 7.275957614183426e-12
+        },
+        {
+          "seconds": 0.16589923948049545,
+          "torch_peak_MiB": 772.25244140625,
+          "device_delta_MiB": 774.0,
+          "host_delta_MiB": 0.00390625,
+          "trace_square_error": 7.275957614183426e-12
+        }
+      ]
+    },
+    {
+      "n": 8192,
+      "method": "feedback",
+      "trials": [
+        {
+          "seconds": 0.19244335684925318,
+          "torch_peak_MiB": 45.22021484375,
+          "device_delta_MiB": 62.0,
+          "host_delta_MiB": 0.00390625,
+          "checksum": -7561.471133549512
+        },
+        {
+          "seconds": 0.1919507784768939,
+          "torch_peak_MiB": 45.22021484375,
+          "device_delta_MiB": 62.0,
+          "host_delta_MiB": 0.00390625,
+          "checksum": -7561.471133549512
+        },
+        {
+          "seconds": 0.19499397557228804,
+          "torch_peak_MiB": 45.22021484375,
+          "device_delta_MiB": 62.0,
+          "host_delta_MiB": 0.00390625,
+          "checksum": -7561.471133549512
+        }
+      ]
+    },
+    {
+      "n": 8192,
+      "method": "EVD",
+      "trials": [
+        {
+          "seconds": 0.842534564435482,
+          "torch_peak_MiB": 3080.25244140625,
+          "device_delta_MiB": 3104.0,
+          "host_delta_MiB": 9.07421875,
+          "trace_square_error": 1.4551915228366852e-11
+        },
+        {
+          "seconds": 0.8339686598628759,
+          "torch_peak_MiB": 3080.25244140625,
+          "device_delta_MiB": 3104.0,
+          "host_delta_MiB": 0.0078125,
+          "trace_square_error": 1.4551915228366852e-11
+        },
+        {
+          "seconds": 0.8326990716159344,
+          "torch_peak_MiB": 3080.25244140625,
+          "device_delta_MiB": 3104.0,
+          "host_delta_MiB": 0.00390625,
+          "trace_square_error": 1.4551915228366852e-11
+        }
+      ]
+    },
+    {
+      "n": 16384,
+      "method": "feedback",
+      "trials": [
+        {
+          "seconds": 0.7532810112461448,
+          "torch_peak_MiB": 91.1337890625,
+          "device_delta_MiB": 80.0,
+          "host_delta_MiB": 0.00390625,
+          "checksum": -15123.21029489662
+        },
+        {
+          "seconds": 0.7503631506115198,
+          "torch_peak_MiB": 91.1337890625,
+          "device_delta_MiB": 80.0,
+          "host_delta_MiB": 0.00390625,
+          "checksum": -15123.210294896622
+        },
+        {
+          "seconds": 0.7498304536566138,
+          "torch_peak_MiB": 91.1337890625,
+          "device_delta_MiB": 80.0,
+          "host_delta_MiB": 0.00390625,
+          "checksum": -15123.210294896622
+        }
+      ]
+    },
+    {
+      "n": 16384,
+      "method": "EVD",
+      "trials": [
+        {
+          "seconds": 5.329420944675803,
+          "torch_peak_MiB": 12304.25244140625,
+          "device_delta_MiB": 12306.0,
+          "host_delta_MiB": 0.00390625,
+          "trace_square_error": 0.0
+        },
+        {
+          "seconds": 5.33506787288934,
+          "torch_peak_MiB": 12304.25244140625,
+          "device_delta_MiB": 12306.0,
+          "host_delta_MiB": 0.0078125,
+          "trace_square_error": 0.0
+        },
+        {
+          "seconds": 5.3329666666686535,
+          "torch_peak_MiB": 12304.25244140625,
+          "device_delta_MiB": 12306.0,
+          "host_delta_MiB": 0.00390625,
+          "trace_square_error": 0.0
+        }
+      ]
+    }
+  ]
+}

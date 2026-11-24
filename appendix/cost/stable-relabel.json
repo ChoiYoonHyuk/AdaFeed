@@ -1,0 +1,18 @@
+{
+  "feedback_csr": {
+    "false_positive_iso": [],
+    "changed_after_relabel": []
+  },
+  "feedback_dense": {
+    "false_positive_iso": [],
+    "changed_after_relabel": []
+  },
+  "epwl_A": {
+    "false_positive_iso": [],
+    "changed_after_relabel": []
+  },
+  "epwl_joint": {
+    "false_positive_iso": [],
+    "changed_after_relabel": []
+  }
+}

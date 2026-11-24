@@ -1,0 +1,391 @@
+{
+  "source_sha256": "892b15ebb0abfaf1470c1b2f3e7d7fc2418d2f141d65a7c37f3e7eefda62bfaa",
+  "dataset_sha256": "6975d172d27aedcdf4eb2c747450ede7928c111caeb2689fbc67e6b62fbd5562",
+  "pairs": 100,
+  "seeds": [
+    117,
+    283,
+    461
+  ],
+  "steps": 24,
+  "degree": 24,
+  "lr": 0.012,
+  "embedding_scale": 100.0,
+  "ridge": 1e-07,
+  "threshold": 72.34,
+  "modular_upper_reference_ids": [
+    265,
+    273,
+    278,
+    289,
+    296,
+    297,
+    305,
+    307,
+    317
+  ],
+  "unique_alternative_encodings_range": [
+    64,
+    64
+  ],
+  "unique_reliability_encodings_range": [
+    64,
+    64
+  ],
+  "official_alternative_pairs": 32,
+  "official_reliability_pairs": 32,
+  "training": "First alternative pair. Adam optimizes negative log mean squared embedding difference + epsilon inside log (1e-12); gradient norm cap=5. Smooth tanh field and vertex MLP; sum/sqrt(n).",
+  "secondary_checks": "Also remove first alternative pair for 31-pair score with same cutoff; generate fresh independent random relabelings of first pair to measure embedding drift.",
+  "software": {
+    "torch": "2.11.0+cu128",
+    "numpy": "1.26.4"
+  },
+  "seconds": 184.19797943159938,
+  "rows": [
+    {
+      "seed": 117,
+      "rounds": 1,
+      "stage": "before",
+      "accepted_CFI_ids": [
+        265,
+        278,
+        289,
+        297,
+        317
+      ],
+      "missed_modular_ids": [
+        273,
+        296,
+        305,
+        307
+      ],
+      "outside_modular_ids": [],
+      "null_failures": 0,
+      "passed_on_last_31": 5,
+      "permutation_guard_failures_among_accepted": 0,
+      "minimum_accepted_gap": 0.03849812985964047,
+      "max_permutation_drift": 1.0369269086180757e-13,
+      "field_movement_on_accepted": []
+    },
+    {
+      "seed": 117,
+      "rounds": 1,
+      "stage": "after",
+      "accepted_CFI_ids": [
+        265,
+        278,
+        289,
+        297,
+        317
+      ],
+      "missed_modular_ids": [
+        273,
+        296,
+        305,
+        307
+      ],
+      "outside_modular_ids": [],
+      "null_failures": 0,
+      "passed_on_last_31": 5,
+      "permutation_guard_failures_among_accepted": 0,
+      "minimum_accepted_gap": 527.729677472506,
+      "max_permutation_drift": 1.5752910326854155e-12,
+      "field_movement_on_accepted": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "seed": 117,
+      "rounds": 2,
+      "stage": "before",
+      "accepted_CFI_ids": [
+        265,
+        273,
+        278,
+        289,
+        296,
+        297,
+        307,
+        317
+      ],
+      "missed_modular_ids": [
+        305
+      ],
+      "outside_modular_ids": [],
+      "null_failures": 0,
+      "passed_on_last_31": 8,
+      "permutation_guard_failures_among_accepted": 0,
+      "minimum_accepted_gap": 0.0034839227891887937,
+      "max_permutation_drift": 1.7456265077867385e-13,
+      "field_movement_on_accepted": []
+    },
+    {
+      "seed": 117,
+      "rounds": 2,
+      "stage": "after",
+      "accepted_CFI_ids": [
+        265,
+        273,
+        278,
+        289,
+        296,
+        297,
+        307,
+        317
+      ],
+      "missed_modular_ids": [
+        305
+      ],
+      "outside_modular_ids": [],
+      "null_failures": 0,
+      "passed_on_last_31": 8,
+      "permutation_guard_failures_among_accepted": 0,
+      "minimum_accepted_gap": 299.4991548203536,
+      "max_permutation_drift": 1.171181364442554e-11,
+      "field_movement_on_accepted": [
+        0.36743050002272687,
+        1.6615443974944621,
+        0.20657575168126718,
+        1.4002741375190593,
+        1.5757093899876449,
+        0.23942705015274288,
+        1.1649576488968607,
+        1.313202562054043
+      ]
+    },
+    {
+      "seed": 283,
+      "rounds": 1,
+      "stage": "before",
+      "accepted_CFI_ids": [
+        265,
+        278,
+        289,
+        297,
+        317
+      ],
+      "missed_modular_ids": [
+        273,
+        296,
+        305,
+        307
+      ],
+      "outside_modular_ids": [],
+      "null_failures": 0,
+      "passed_on_last_31": 5,
+      "permutation_guard_failures_among_accepted": 0,
+      "minimum_accepted_gap": 0.05387704983428757,
+      "max_permutation_drift": 1.215612590088894e-13,
+      "field_movement_on_accepted": []
+    },
+    {
+      "seed": 283,
+      "rounds": 1,
+      "stage": "after",
+      "accepted_CFI_ids": [
+        265,
+        278,
+        289,
+        297,
+        317
+      ],
+      "missed_modular_ids": [
+        273,
+        296,
+        305,
+        307
+      ],
+      "outside_modular_ids": [],
+      "null_failures": 0,
+      "passed_on_last_31": 5,
+      "permutation_guard_failures_among_accepted": 0,
+      "minimum_accepted_gap": 586.8695571440433,
+      "max_permutation_drift": 1.639614891002561e-12,
+      "field_movement_on_accepted": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "seed": 283,
+      "rounds": 2,
+      "stage": "before",
+      "accepted_CFI_ids": [
+        265,
+        273,
+        278,
+        289,
+        297,
+        307,
+        317
+      ],
+      "missed_modular_ids": [
+        296,
+        305
+      ],
+      "outside_modular_ids": [],
+      "null_failures": 0,
+      "passed_on_last_31": 7,
+      "permutation_guard_failures_among_accepted": 0,
+      "minimum_accepted_gap": 0.011047795941256126,
+      "max_permutation_drift": 1.515823238051818e-13,
+      "field_movement_on_accepted": []
+    },
+    {
+      "seed": 283,
+      "rounds": 2,
+      "stage": "after",
+      "accepted_CFI_ids": [
+        265,
+        273,
+        278,
+        289,
+        296,
+        297,
+        307,
+        317
+      ],
+      "missed_modular_ids": [
+        305
+      ],
+      "outside_modular_ids": [],
+      "null_failures": 0,
+      "passed_on_last_31": 8,
+      "permutation_guard_failures_among_accepted": 0,
+      "minimum_accepted_gap": 271.4192000817589,
+      "max_permutation_drift": 1.230814260442429e-11,
+      "field_movement_on_accepted": [
+        0.41129730926967006,
+        1.6622793658432276,
+        0.4598709802538044,
+        1.5625035135791938,
+        1.86628995460004,
+        0.5014038071335687,
+        1.331000779566571,
+        1.1451933343578031
+      ]
+    },
+    {
+      "seed": 461,
+      "rounds": 1,
+      "stage": "before",
+      "accepted_CFI_ids": [
+        265,
+        278,
+        289,
+        297,
+        317
+      ],
+      "missed_modular_ids": [
+        273,
+        296,
+        305,
+        307
+      ],
+      "outside_modular_ids": [],
+      "null_failures": 0,
+      "passed_on_last_31": 5,
+      "permutation_guard_failures_among_accepted": 0,
+      "minimum_accepted_gap": 0.06456204848293776,
+      "max_permutation_drift": 1.3345157847050578e-13,
+      "field_movement_on_accepted": []
+    },
+    {
+      "seed": 461,
+      "rounds": 1,
+      "stage": "after",
+      "accepted_CFI_ids": [
+        265,
+        278,
+        289,
+        297,
+        317
+      ],
+      "missed_modular_ids": [
+        273,
+        296,
+        305,
+        307
+      ],
+      "outside_modular_ids": [],
+      "null_failures": 0,
+      "passed_on_last_31": 5,
+      "permutation_guard_failures_among_accepted": 0,
+      "minimum_accepted_gap": 482.6365380397306,
+      "max_permutation_drift": 1.4380373887290168e-12,
+      "field_movement_on_accepted": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "seed": 461,
+      "rounds": 2,
+      "stage": "before",
+      "accepted_CFI_ids": [
+        265,
+        273,
+        278,
+        289,
+        296,
+        297,
+        317
+      ],
+      "missed_modular_ids": [
+        305,
+        307
+      ],
+      "outside_modular_ids": [],
+      "null_failures": 0,
+      "passed_on_last_31": 7,
+      "permutation_guard_failures_among_accepted": 0,
+      "minimum_accepted_gap": 0.008409205023250838,
+      "max_permutation_drift": 1.5044599394002245e-13,
+      "field_movement_on_accepted": []
+    },
+    {
+      "seed": 461,
+      "rounds": 2,
+      "stage": "after",
+      "accepted_CFI_ids": [
+        265,
+        273,
+        278,
+        289,
+        296,
+        297,
+        307,
+        317
+      ],
+      "missed_modular_ids": [
+        305
+      ],
+      "outside_modular_ids": [],
+      "null_failures": 0,
+      "passed_on_last_31": 8,
+      "permutation_guard_failures_among_accepted": 0,
+      "minimum_accepted_gap": 282.1989607993646,
+      "max_permutation_drift": 7.563379485181893e-12,
+      "field_movement_on_accepted": [
+        0.31052828684276684,
+        1.7277753710870551,
+        0.3989287801278324,
+        1.3218618410783707,
+        1.7442061782394978,
+        0.32460599306968446,
+        1.417277445688044,
+        0.962150578292721
+      ]
+    }
+  ]
+}

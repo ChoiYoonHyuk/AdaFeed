@@ -1,0 +1,12 @@
+# Normalized feedback on all 400 original BREC pairs
+
+This deterministic protocol fixes the observable bank before evaluating normalized pair outcomes. Existing unnormalized decision certificates give a ceiling of 219 separable pairs at stabilization, now shared with the normalized interface by its simulation theorem. Consult individual archived decisions only after computing each normalized bank. No field, order, pair or arithmetic choice will be adjusted after evaluation.
+
+Use the original 400 graph6 pairs in the official BREC v3 array, entries 64i and 64i+1 for i=0,...,399. Verify the published archive digest from the prior certificate, and keep all benchmark data on the H100 host. For each graph form the row transition P=D^(-1)A with zero rows at isolates. Its power diagonals agree with those of the symmetric normalized adjacency, also after the same diagonal addition. The first query returns the diagonal of P^k, k=1,...,24, at every vertex. At each subsequent query use the immediately preceding 24-channel row m at a vertex and set p = (c dot m)/sum(abs(c)), with the same coefficients on both feedback rounds:
+
+    (2,-1,3,1,-2,-3,1,-1,2,3,-1,2,-3,1,2,-2,3,-1,1,2,-3,2,-1,3).
+
+The gate is bounded by one on these graphs. The later base is (P+Diag(p))/2 and each query reads its first 24 power diagonals. Three queries in total, including initialization. At every depth retain all preceding returns, and compare the multisets of complete node tuples with joint exact sorting. The same real-valued rational encoder runs on both graphs for all pairs. Arithmetic uses two fixed prime fields, 1,000,003 and 1,000,033; degree, gate and scaling denominators must be invertible. A difference modulo either prime proves rational separation. Equality of residues alone is inconclusive. Cumulative separation allows skipping deeper evaluation of a pair within a prime after its first difference. On pair 296 repeat all three queries with independent seeded permutations on both graphs, and compare the full vertex histories after undoing permutations.
+
+Report detection totals by depth and BREC family, oracle overlap with the archived set of 219 positives, any inconclusive known positives, per-prime discrepancies, and relabeling checks. Record CPU wall time, execution device, software versions, source/protocol hashes, and verified archive hash. Numeric timings are descriptive for this audit. No GPU operations are needed for these exact integer checks. Export aggregate metrics and IDs only.
+

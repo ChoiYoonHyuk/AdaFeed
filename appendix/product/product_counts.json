@@ -1,0 +1,57 @@
+{
+  "path3": {
+    "order": 3,
+    "edges": 2,
+    "hom": [
+      20,
+      16,
+      20
+    ],
+    "quadratic_coefficient": 276,
+    "signless_sixth_trace": 730
+  },
+  "plus": {
+    "order": 45,
+    "edges": 54,
+    "hom": [
+      19182,
+      12486,
+      18084
+    ],
+    "quadratic_coefficient": 244260,
+    "signless_sixth_trace": 1668990
+  },
+  "minus": {
+    "order": 45,
+    "edges": 54,
+    "hom": [
+      19182,
+      12480,
+      18096
+    ],
+    "quadratic_coefficient": 244260,
+    "signless_sixth_trace": 1668990
+  },
+  "plus_times_path3": {
+    "order": 135,
+    "edges": 216,
+    "hom": [
+      383640,
+      199776,
+      361680
+    ],
+    "quadratic_coefficient": 4585536,
+    "signless_sixth_trace": 64530216
+  },
+  "minus_times_path3": {
+    "order": 135,
+    "edges": 216,
+    "hom": [
+      383640,
+      199680,
+      361920
+    ],
+    "quadratic_coefficient": 4585680,
+    "signless_sixth_trace": 64530360
+  }
+}

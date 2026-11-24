@@ -1,0 +1,173 @@
+{
+  "equal_necklaces_through_degree_five": 23,
+  "length_six_necklaces": {
+    "AAAAAA": {
+      "cyclic_orbit": 1,
+      "plus": 7632,
+      "minus": 7632,
+      "delta": 0
+    },
+    "AAAAAD": {
+      "cyclic_orbit": 6,
+      "plus": 1500,
+      "minus": 1500,
+      "delta": 0
+    },
+    "AAAADD": {
+      "cyclic_orbit": 6,
+      "plus": 19182,
+      "minus": 19182,
+      "delta": 0
+    },
+    "AAADAD": {
+      "cyclic_orbit": 6,
+      "plus": 12486,
+      "minus": 12480,
+      "delta": 6
+    },
+    "AAADDD": {
+      "cyclic_orbit": 6,
+      "plus": 2856,
+      "minus": 2856,
+      "delta": 0
+    },
+    "AADAAD": {
+      "cyclic_orbit": 3,
+      "plus": 18084,
+      "minus": 18096,
+      "delta": -12
+    },
+    "AADADD": {
+      "cyclic_orbit": 6,
+      "plus": 1848,
+      "minus": 1848,
+      "delta": 0
+    },
+    "AADDAD": {
+      "cyclic_orbit": 6,
+      "plus": 1848,
+      "minus": 1848,
+      "delta": 0
+    },
+    "AADDDD": {
+      "cyclic_orbit": 6,
+      "plus": 87048,
+      "minus": 87048,
+      "delta": 0
+    },
+    "ADADAD": {
+      "cyclic_orbit": 2,
+      "plus": 1260,
+      "minus": 1260,
+      "delta": 0
+    },
+    "ADADDD": {
+      "cyclic_orbit": 6,
+      "plus": 34872,
+      "minus": 34872,
+      "delta": 0
+    },
+    "ADDADD": {
+      "cyclic_orbit": 3,
+      "plus": 26754,
+      "minus": 26754,
+      "delta": 0
+    },
+    "ADDDDD": {
+      "cyclic_orbit": 6,
+      "plus": 0,
+      "minus": 0,
+      "delta": 0
+    },
+    "DDDDDD": {
+      "cyclic_orbit": 1,
+      "plus": 554484,
+      "minus": 554484,
+      "delta": 0
+    }
+  },
+  "direct_product_traces": {
+    "P3": {
+      "plus": 64530216,
+      "minus": 64530360,
+      "z": 1,
+      "delta": -144
+    },
+    "P4": {
+      "plus": 131900592,
+      "minus": 131900664,
+      "z": 1,
+      "delta": -72
+    },
+    "P5_negative_shift": {
+      "plus": 8152597536,
+      "minus": 8152597824,
+      "z": -2,
+      "delta": -288
+    },
+    "C4": {
+      "plus": 278098176,
+      "minus": 278098176,
+      "z": 1,
+      "delta": 0
+    },
+    "K2_3": {
+      "plus": 1466377704,
+      "minus": 1466379000,
+      "z": 1,
+      "delta": -1296
+    },
+    "triangle_tail": {
+      "plus": 393914612880,
+      "minus": 393914615472,
+      "z": 3,
+      "delta": -2592
+    },
+    "subdivided_K4": {
+      "plus": 2855413584,
+      "minus": 2855415312,
+      "z": 1,
+      "delta": -1728
+    }
+  },
+  "path_gaps_at_z1": {
+    "3": -144,
+    "4": -72,
+    "5": -72,
+    "6": -72,
+    "7": -72,
+    "8": -72,
+    "9": -72,
+    "10": -72,
+    "11": -72,
+    "12": -72,
+    "13": -72,
+    "14": -72,
+    "15": -72,
+    "16": -72,
+    "17": -72,
+    "18": -72,
+    "19": -72,
+    "20": -72
+  },
+  "cycle_gaps_at_z1": {
+    "3": 0,
+    "4": 0,
+    "5": 0,
+    "6": 0,
+    "7": 0,
+    "8": 0,
+    "9": 0,
+    "10": 0,
+    "11": 0,
+    "12": 0,
+    "13": 0,
+    "14": 0,
+    "15": 0,
+    "16": 0,
+    "17": 0,
+    "18": 0,
+    "19": 0,
+    "20": 0
+  }
+}

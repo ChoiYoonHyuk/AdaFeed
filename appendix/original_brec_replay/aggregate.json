@@ -1,0 +1,67 @@
+{
+  "start_utc": "2026-11-22T08:12:14+00:00",
+  "checker_invocation": "python -B -u verify.py --brec <official-array> --workers 4",
+  "workers": 4,
+  "execution": "low-priority CPU on H100 host; single-threaded numerical libraries",
+  "python": "3.12.7",
+  "runner_sha256": "5b71c1ef4d9ed1818eeadf4182a740aeed47042c41f67f7d80a4e063fc28f4bd",
+  "archive_sha256": "c5364ff0f7b76bd5cbba7d57aa0902540f82c3d1e5541c71bba2e9ed744d2ec1",
+  "official_array_sha256": "6975d172d27aedcdf4eb2c747450ede7928c111caeb2689fbc67e6b62fbd5562",
+  "released_file_sha256_verified": {
+    "README.md": "71917e8f3b9b2daab05d154f84e30d8d4be3c7808221cf9e1b66f859cba0e4f8",
+    "brec_results.json": "896f28cc12581900ba182b0187553ad88b8fe2ed5bce27df2ad08d9bb5dc77ed",
+    "brec_verify.py": "14353ba4a106a4ed5527983406dfe598c2c0dc1acd25ff9f5e58f25435642253",
+    "constructions.py": "fed6e479e1ef1e49e9d4b243a9042d3aa6aa9dc1de66e5e419f51e132cb710b6",
+    "epwl_upper.json": "705fd5171a5981ab9b116128a3f8ab176f69a576efd968469167515bce64e841",
+    "epwl_upper.py": "3c707cece5fabcb73587582e1942a1a3dd216dabd01709f87ce8c2a73df34a79",
+    "pair_reference.json": "b0749387a2bbaf9eb5d02dab37f68d2ceed4fca143c3aa47db13e36f7ad1da30",
+    "verify.py": "db3d464e98f1878cd1397a0d0d98baff577a8ce943cbd9951ff6e3a5ac9f4c9f",
+    "wl_bench.json": "5fb2d38a88e9f117abc92b46f51eab93348c9a35b7a2fd1dcd0f0773bf79781b",
+    "wl_bench.py": "a15271701228a63135bf18793698443976d2f279c9fcdfb6c64ac461e42c7644",
+    "word_span.py": "270a6cfd1f911d2c3b46972b055c47ee58736dbead2dbb7b47ee7c69435ef7fc"
+  },
+  "checker_duration_seconds": 12.707,
+  "checker_exit_code": 0,
+  "completed_checks": {
+    "constructed_graph_certificates": true,
+    "all_400_per_id_feedback_objects": true,
+    "all_400_epwl_and_wl_ea_objects": true
+  },
+  "passed": true,
+  "feedback_routes": {
+    "common_coherent": 60,
+    "common_colored_words": 51,
+    "common_srg": 70,
+    "spatial": 3,
+    "static": 216
+  },
+  "feedback_positive": 219,
+  "feedback_negative": 181,
+  "epwl_positive": 236,
+  "epwl_common_algebra_ties": 130,
+  "epwl_explicit_other_ties": 34,
+  "wl_controls": {
+    "range": [
+      0,
+      399
+    ],
+    "all": {
+      "pairs": 400,
+      "wl": 0,
+      "static": 216,
+      "feedback": 219,
+      "joint": 216,
+      "nodewise_wl_and_ea": 216,
+      "ea_initialized_wl": 218,
+      "wl_only_over_static": 0,
+      "feedback_only_over_joint": 3,
+      "joint_only_over_feedback": 0
+    },
+    "isomorphic_controls": 800,
+    "independent_pair_relabelings": 400,
+    "relabel_failures": 0
+  },
+  "checker_log_sha256": "17a4fdc5c29155f550470744d7809672e19aadd1289fed704926b450d65f6283",
+  "end_utc": "2026-11-22T08:12:27+00:00",
+  "duration_seconds": 12.942
+}

@@ -1,0 +1,226 @@
+{
+  "index": "https://users.cecs.anu.edu.au/~bdm/data/graphs.html",
+  "families": [
+    {
+      "parameters": [
+        25,
+        12,
+        5,
+        6
+      ],
+      "n_catalog_cores": 15,
+      "n_test_cores": 14,
+      "url": "https://users.cecs.anu.edu.au/~bdm/data/sr251256.g6",
+      "sha256": "f55f86eb48cd61c3315c62341cc3a8c59289c58504edb3ab859d7ef2068b9aa4",
+      "size_bytes": 780,
+      "n_test_roots": 350,
+      "correct": 350,
+      "calibration_intercept": 158880,
+      "oracle_constant_correct": 134,
+      "modal_targets": [
+        14
+      ],
+      "target_histogram": {
+        "10": 6,
+        "11": 8,
+        "12": 89,
+        "13": 42,
+        "14": 134,
+        "15": 70,
+        "16": 1
+      },
+      "min_target": 10,
+      "max_target": 16,
+      "static_score": 118344,
+      "root_local_score": 179616,
+      "permuted_test_roots": 25
+    },
+    {
+      "parameters": [
+        26,
+        10,
+        3,
+        4
+      ],
+      "n_catalog_cores": 10,
+      "n_test_cores": 9,
+      "url": "https://users.cecs.anu.edu.au/~bdm/data/sr261034.g6",
+      "sha256": "f0b4b4ad4507835703444c0f0990733e2f7cc31524cf91d04ba4a109f1fd52ac",
+      "size_bytes": 570,
+      "n_test_roots": 234,
+      "correct": 234,
+      "calibration_intercept": 53020,
+      "oracle_constant_correct": 120,
+      "modal_targets": [
+        0
+      ],
+      "target_histogram": {
+        "0": 120,
+        "1": 60,
+        "2": 30,
+        "3": 24
+      },
+      "min_target": 0,
+      "max_target": 3,
+      "static_score": 37560,
+      "root_local_score": 63120,
+      "permuted_test_roots": 26
+    },
+    {
+      "parameters": [
+        28,
+        12,
+        6,
+        4
+      ],
+      "n_catalog_cores": 4,
+      "n_test_cores": 3,
+      "url": "https://users.cecs.anu.edu.au/~bdm/data/sr281264.g6",
+      "sha256": "3859424c3e8facd4d3be701ff91fe38d5c43c7b7c1c0562a5d912b096a7ed2aa",
+      "size_bytes": 260,
+      "n_test_roots": 84,
+      "correct": 84,
+      "calibration_intercept": 150468,
+      "oracle_constant_correct": 28,
+      "modal_targets": [
+        40
+      ],
+      "target_histogram": {
+        "32": 4,
+        "33": 10,
+        "35": 18,
+        "36": 24,
+        "40": 28
+      },
+      "min_target": 32,
+      "max_target": 40,
+      "static_score": 109584,
+      "root_local_score": 168696,
+      "permuted_test_roots": 28
+    },
+    {
+      "parameters": [
+        29,
+        14,
+        6,
+        7
+      ],
+      "n_catalog_cores": 41,
+      "n_test_cores": 40,
+      "url": "https://users.cecs.anu.edu.au/~bdm/data/sr291467.g6",
+      "sha256": "ea303aa60f98f01e6cc619884cd7d5716bfc00c38b7feaee080c7ff312781625",
+      "size_bytes": 2870,
+      "n_test_roots": 1160,
+      "correct": 1160,
+      "calibration_intercept": 331800,
+      "oracle_constant_correct": 468,
+      "modal_targets": [
+        26
+      ],
+      "target_histogram": {
+        "23": 21,
+        "24": 189,
+        "25": 265,
+        "26": 468,
+        "27": 170,
+        "28": 45,
+        "29": 2
+      },
+      "min_target": 23,
+      "max_target": 29,
+      "static_score": 257908,
+      "root_local_score": 368732,
+      "permuted_test_roots": 29
+    },
+    {
+      "parameters": [
+        35,
+        16,
+        6,
+        8
+      ],
+      "n_catalog_cores": 3854,
+      "n_test_cores": 3853,
+      "url": "https://users.cecs.anu.edu.au/~bdm/data/sr351668.g6",
+      "sha256": "1d5010ad4da362b1ba600abf02e9abfef9c4204226bcaf01db4926c71c4265b9",
+      "size_bytes": 393108,
+      "n_test_roots": 134855,
+      "correct": 134855,
+      "calibration_intercept": 587056,
+      "oracle_constant_correct": 27898,
+      "modal_targets": [
+        22
+      ],
+      "target_histogram": {
+        "13": 9,
+        "14": 260,
+        "15": 77,
+        "16": 1062,
+        "17": 473,
+        "18": 3517,
+        "19": 7447,
+        "20": 21067,
+        "21": 24758,
+        "22": 27898,
+        "23": 15854,
+        "24": 18596,
+        "25": 4262,
+        "26": 4945,
+        "28": 3590,
+        "32": 1040
+      },
+      "min_target": 13,
+      "max_target": 32,
+      "static_score": 473280,
+      "root_local_score": 650016,
+      "permuted_test_roots": 35
+    },
+    {
+      "parameters": [
+        35,
+        18,
+        9,
+        9
+      ],
+      "n_catalog_cores": 227,
+      "n_test_cores": 226,
+      "url": "https://users.cecs.anu.edu.au/~bdm/data/sr351899.g6",
+      "sha256": "a63871afc7e8a3a0d390d705c38a40ecc58e22563dcec8fafc9ea2879a361eb7",
+      "size_bytes": 23154,
+      "n_test_roots": 7910,
+      "correct": 7910,
+      "calibration_intercept": 1188000,
+      "oracle_constant_correct": 1581,
+      "modal_targets": [
+        112
+      ],
+      "target_histogram": {
+        "101": 8,
+        "102": 90,
+        "103": 16,
+        "104": 291,
+        "105": 26,
+        "106": 119,
+        "107": 169,
+        "108": 810,
+        "109": 899,
+        "110": 1453,
+        "111": 964,
+        "112": 1581,
+        "113": 384,
+        "114": 606,
+        "116": 379,
+        "120": 115
+      },
+      "min_target": 101,
+      "max_target": 120,
+      "static_score": 971352,
+      "root_local_score": 1280880,
+      "permuted_test_roots": 35
+    }
+  ],
+  "version": {
+    "numpy": "1.26.4",
+    "networkx": "3.3"
+  }
+}

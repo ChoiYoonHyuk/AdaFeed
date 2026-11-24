@@ -1,0 +1,77 @@
+{
+  "arithmetic": "exact rational",
+  "static_normalization_example": {
+    "graphs": [
+      "K2 + C4",
+      "P3 + P3"
+    ],
+    "ordinary_two_step_sums": [
+      10,
+      8
+    ],
+    "normalized_even_profile_multiplicities": {
+      "1": 2,
+      "1/2": 4
+    },
+    "normalized_odd_profile": "0",
+    "verified_P_cubed_equals_P": true
+  },
+  "exhaustive_labeled_graphs_by_order": {
+    "1": 1,
+    "2": 2,
+    "3": 8,
+    "4": 64,
+    "5": 1024
+  },
+  "additional_nine_vertex_example": {
+    "degree": [
+      1,
+      2,
+      1,
+      2,
+      2,
+      2,
+      1,
+      1,
+      0
+    ],
+    "unit_projector_diagonal": [
+      "1/4",
+      "1/2",
+      "1/4",
+      "1/3",
+      "1/3",
+      "1/3",
+      "1/2",
+      "1/2",
+      "0"
+    ],
+    "cubic_residual": [
+      "1/4",
+      "1/4",
+      "1/4",
+      "1/6",
+      "1/6",
+      "1/6",
+      "1/2",
+      "1/2",
+      "0"
+    ],
+    "recovered_degree": [
+      1,
+      2,
+      1,
+      2,
+      2,
+      2,
+      1,
+      1,
+      0
+    ]
+  },
+  "graphs": 1100,
+  "root_degree_recoveries": 5414,
+  "diagonal_resolvent_equalities": 32484,
+  "poles_per_target": 2,
+  "targets_per_graph": 3
+}

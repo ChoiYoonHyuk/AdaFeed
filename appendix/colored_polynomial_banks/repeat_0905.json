@@ -1,0 +1,125 @@
+{
+  "mode": "0905",
+  "began_utc": "2026-11-22T09:05:02.091924+00:00",
+  "gpu": "NVIDIA H100 PCIe",
+  "gpu_bytes": 85028372480,
+  "cuda": "12.8",
+  "torch": "2.11.0+cu128",
+  "width": 64,
+  "cap_seconds": 120.0,
+  "fp": "FP64",
+  "cuda_init_seconds": 0.15755479410290718,
+  "host_cpu": "Intel(R) Xeon(R) Gold 6430",
+  "archive_sha256": "450b8733635d887466a2b96b26411f6e62caf7006f8a264f59cf9b5d75cdf549",
+  "source_sha256": "c0abd6f77e81bcbe0fa27eb72bbd46b0d4bf2298079d8a7ee92723033000d9fe",
+  "cpp_sha256": "95661a8b0dc8134d5f39ea8ef90970c381294da7d4c93f9c70c855f5d983407a",
+  "binary_sha256": "67d1444c35f756ff6f4bfb5d4655392b47f23e5ec7ae23c355ffaece66ddf16f",
+  "protocol_sha256": "81c3068507c3ed4bf630548b88926d2063ec098a3b8c844d5df07d9da8f813dc",
+  "cases": [
+    {
+      "n": 65536,
+      "k": 24,
+      "order": [
+        "color"
+      ],
+      "methods": {
+        "color": {
+          "utc": "2026-11-22T09:05:02.225735+00:00",
+          "contexts_before": {
+            "external_compute_contexts": 0,
+            "external_allocated_MiB": 0,
+            "gpu_model_clock_MHz_memory_used_MiB": "NVIDIA H100 PCIe, 1755, 551"
+          },
+          "contexts_after": {
+            "external_compute_contexts": 0,
+            "external_allocated_MiB": 0,
+            "gpu_model_clock_MHz_memory_used_MiB": "NVIDIA H100 PCIe, 1755, 729"
+          },
+          "graph": {
+            "full_nodes": 1088092,
+            "full_edges": 1541898,
+            "raw_directed_rows": 3083796,
+            "bfs_start_original_id": 0,
+            "used_largest_component_fallback": false,
+            "bfs_component_nodes": 1087562,
+            "prefixes_sha256": {
+              "4096": "8819bdba9aad2a8e3815dfee9ffbed0370e1948622b651ada84fb6713cfd3dc5",
+              "16384": "94f5eec3463af1a76e697189ae410301fd6e1efc5a7a4bfebc2eaf7c5fc5ff0c",
+              "65536": "86d45bbaebeea6f6c36cc29eb0435f3703fe8887ba6188b3a3f67b7113314834"
+            },
+            "prefix_edges": 92108,
+            "degree_min": 1,
+            "degree_max": 7,
+            "normalized_csr_sha256": "58c8a2d0cbe2fc74a6f682d7fc4e1440533b31b4b527d752a50621e4c882fe3b"
+          },
+          "method": "color",
+          "columns": 1349,
+          "blocks_per_bank": 22,
+          "width": 64,
+          "cold_gpu": {
+            "seconds": 0.21001862734556198,
+            "censored": false,
+            "completed_blocks": 44,
+            "planned_blocks": 44,
+            "resident_input_MiB": 3.859375,
+            "peak_allocated_MiB": 158.41796875,
+            "peak_additional_MiB": 154.55859375
+          },
+          "cold_total_seconds": 3.09689749032259,
+          "cpu_common_graph_seconds": 0.7827700357884169,
+          "cpu_coloring_seconds": 2.096283153630793,
+          "gpu_staging_seconds": 0.005826896987855434,
+          "process_rss_cold": {
+            "initial_MiB": 735.08984375,
+            "peak_MiB": 876.62890625,
+            "increment_MiB": 141.5390625
+          },
+          "verify_coloring_seconds": 1.978403958491981,
+          "ordered_pairs_checked_in_balls": 134088086,
+          "color_sha256": "e95587736c314172438e75eeb07a03708f7db2a808f500fc1d6d371556858b3f",
+          "resident_trials": [
+            {
+              "seconds": 0.16470107343047857,
+              "censored": false,
+              "completed_blocks": 44,
+              "planned_blocks": 44,
+              "resident_input_MiB": 3.859375,
+              "peak_allocated_MiB": 158.41796875,
+              "peak_additional_MiB": 154.55859375
+            },
+            {
+              "seconds": 0.16487827338278294,
+              "censored": false,
+              "completed_blocks": 44,
+              "planned_blocks": 44,
+              "resident_input_MiB": 3.859375,
+              "peak_allocated_MiB": 158.41796875,
+              "peak_additional_MiB": 154.55859375
+            },
+            {
+              "seconds": 0.16447953693568707,
+              "censored": false,
+              "completed_blocks": 44,
+              "planned_blocks": 44,
+              "resident_input_MiB": 3.859375,
+              "peak_allocated_MiB": 158.41796875,
+              "peak_additional_MiB": 154.55859375
+            }
+          ],
+          "resident_median_seconds": 0.16470107343047857
+        }
+      },
+      "verification": {
+        "crosschecked_sample_roots": 128,
+        "root_sample_sha256": "5a39e8273a6390b40a00dc67b54dba048fac2b43d83256ffead04d0a89fdb764",
+        "maximum_field_error": 2.220446049250313e-16,
+        "sampled_errors": [
+          0.0,
+          1.1102230246251565e-16
+        ],
+        "full_bank_errors": null
+      }
+    }
+  ],
+  "finished_utc": "2026-11-22T09:05:07.967940+00:00"
+}

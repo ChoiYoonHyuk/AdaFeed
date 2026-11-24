@@ -1,0 +1,76 @@
+{
+  "checks": {
+    "evd_bank_max_abs_error": 1.3711254354120683e-14,
+    "numerical_partition_permutation_match": true,
+    "test_vertices": 128
+  },
+  "followup": true,
+  "seconds_budget": 45,
+  "records": [
+    {
+      "n": 2048,
+      "method": "EPWL",
+      "trials": [
+        {
+          "seconds": 1.7762079034000635,
+          "torch_peak_MiB": 384.92138671875,
+          "device_delta_MiB": 394.0,
+          "host_delta_MiB": 26.01953125,
+          "projectors": 648,
+          "rounds": 2,
+          "classes": 801
+        },
+        {
+          "seconds": 1.760131566785276,
+          "torch_peak_MiB": 384.92138671875,
+          "device_delta_MiB": 458.0,
+          "host_delta_MiB": 0.02734375,
+          "projectors": 648,
+          "rounds": 2,
+          "classes": 801
+        }
+      ]
+    },
+    {
+      "n": 4096,
+      "method": "EPWL",
+      "trials": [
+        {
+          "seconds": 20.9976366488263,
+          "torch_peak_MiB": 1540.03125,
+          "device_delta_MiB": 1550.0,
+          "host_delta_MiB": 0.0234375,
+          "projectors": 1930,
+          "rounds": 2,
+          "classes": 2497
+        }
+      ]
+    },
+    {
+      "n": 8192,
+      "method": "EPWL",
+      "trials": [
+        {
+          "seconds": 45.09047615528107,
+          "torch_peak_MiB": 6158.30126953125,
+          "device_delta_MiB": 7248.0,
+          "host_delta_MiB": 9.2890625,
+          "timeout": "969/5131 projectors"
+        }
+      ]
+    },
+    {
+      "n": 16384,
+      "method": "EPWL",
+      "trials": [
+        {
+          "seconds": 45.08190226648003,
+          "torch_peak_MiB": 24633.04541015625,
+          "device_delta_MiB": 28864.0,
+          "host_delta_MiB": 6.30859375,
+          "timeout": "209/13510 projectors"
+        }
+      ]
+    }
+  ]
+}

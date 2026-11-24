@@ -1,0 +1,197 @@
+{
+  "device": "NVIDIA H100 PCIe",
+  "torch": "2.11.0+cu128",
+  "cuda": "12.8",
+  "block": 64,
+  "source_sha256": "0913dad4b985fb47c08ab9429f70966f865c30dc1c4d28727aff6d87a5a3e40a",
+  "protocol_sha256": "01caba24d2588609ca03e2a14f006dc08dadde3318f8186209594006de1e8b32",
+  "results": [
+    {
+      "vertices": 1024,
+      "undirected_edges": 1864,
+      "checked_roots": 1024,
+      "abs_error": 4.440892098500626e-16,
+      "energy": 3.654192868062346,
+      "energy_residual": 1.3322676295501878e-15,
+      "trials": {
+        "edge": [
+          {
+            "seconds": 3.44429281540215e-05,
+            "peak_additional_MiB": 0.0234375,
+            "external_gpu_contexts": 0
+          },
+          {
+            "seconds": 3.3010379411280155e-05,
+            "peak_additional_MiB": 0.0234375,
+            "external_gpu_contexts": 0
+          },
+          {
+            "seconds": 3.2361363992094994e-05,
+            "peak_additional_MiB": 0.0234375,
+            "external_gpu_contexts": 0
+          },
+          {
+            "seconds": 3.294349880889058e-05,
+            "peak_additional_MiB": 0.0234375,
+            "external_gpu_contexts": 0
+          },
+          {
+            "seconds": 3.233918687328696e-05,
+            "peak_additional_MiB": 0.0234375,
+            "external_gpu_contexts": 0
+          }
+        ],
+        "return": [
+          {
+            "seconds": 0.0028592655435204506,
+            "peak_additional_MiB": 2.5107421875,
+            "external_gpu_contexts": 0
+          },
+          {
+            "seconds": 0.002812318503856659,
+            "peak_additional_MiB": 2.5107421875,
+            "external_gpu_contexts": 0
+          },
+          {
+            "seconds": 0.002750764600932598,
+            "peak_additional_MiB": 2.5107421875,
+            "external_gpu_contexts": 0
+          },
+          {
+            "seconds": 0.0027486979961395264,
+            "peak_additional_MiB": 2.5107421875,
+            "external_gpu_contexts": 0
+          },
+          {
+            "seconds": 0.002767118625342846,
+            "peak_additional_MiB": 2.5107421875,
+            "external_gpu_contexts": 0
+          }
+        ]
+      },
+      "medians_ms": {
+        "edge": 0.03294349880889058,
+        "return": 2.767118625342846
+      },
+      "peaks_MiB": {
+        "edge": 0.0234375,
+        "return": 2.5107421875
+      }
+    },
+    {
+      "vertices": 4096,
+      "undirected_edges": 11007,
+      "checked_roots": 4096,
+      "abs_error": 2.983724378680108e-16,
+      "energy": 7.836395242545554,
+      "energy_residual": 0.0,
+      "trials": {
+        "edge": [
+          {
+            "seconds": 3.3026677556335926e-05,
+            "peak_additional_MiB": 0.09375,
+            "external_gpu_contexts": 0
+          },
+          {
+            "seconds": 3.268045838922262e-05,
+            "peak_additional_MiB": 0.09375,
+            "external_gpu_contexts": 0
+          },
+          {
+            "seconds": 3.2083073165267706e-05,
+            "peak_additional_MiB": 0.09375,
+            "external_gpu_contexts": 0
+          },
+          {
+            "seconds": 3.26808076351881e-05,
+            "peak_additional_MiB": 0.09375,
+            "external_gpu_contexts": 0
+          },
+          {
+            "seconds": 3.303727135062218e-05,
+            "peak_additional_MiB": 0.09375,
+            "external_gpu_contexts": 0
+          }
+        ],
+        "return": [
+          {
+            "seconds": 0.010140009224414825,
+            "peak_additional_MiB": 10.0400390625,
+            "external_gpu_contexts": 0
+          },
+          {
+            "seconds": 0.010163689032196999,
+            "peak_additional_MiB": 10.0400390625,
+            "external_gpu_contexts": 0
+          },
+          {
+            "seconds": 0.010162620805203915,
+            "peak_additional_MiB": 10.0400390625,
+            "external_gpu_contexts": 0
+          },
+          {
+            "seconds": 0.010104320012032986,
+            "peak_additional_MiB": 10.0400390625,
+            "external_gpu_contexts": 0
+          },
+          {
+            "seconds": 0.01016334630548954,
+            "peak_additional_MiB": 10.0400390625,
+            "external_gpu_contexts": 0
+          }
+        ]
+      },
+      "medians_ms": {
+        "edge": 0.0326808076351881,
+        "return": 10.162620805203915
+      },
+      "peaks_MiB": {
+        "edge": 0.09375,
+        "return": 10.0400390625
+      }
+    },
+    {
+      "vertices": 169343,
+      "undirected_edges": 1157799,
+      "checked_roots": 128,
+      "abs_error": 2.220446049250313e-16,
+      "energy": 1180.8709738120444,
+      "energy_residual": 2.2737367544323206e-13,
+      "trials": {
+        "edge": [
+          {
+            "seconds": 5.478202365338802e-05,
+            "peak_additional_MiB": 3.8759765625,
+            "external_gpu_contexts": 0
+          },
+          {
+            "seconds": 5.435990169644356e-05,
+            "peak_additional_MiB": 3.8759765625,
+            "external_gpu_contexts": 0
+          },
+          {
+            "seconds": 5.397666245698929e-05,
+            "peak_additional_MiB": 3.8759765625,
+            "external_gpu_contexts": 0
+          },
+          {
+            "seconds": 5.368294660001993e-05,
+            "peak_additional_MiB": 3.8759765625,
+            "external_gpu_contexts": 0
+          },
+          {
+            "seconds": 5.1214126870036125e-05,
+            "peak_additional_MiB": 3.8759765625,
+            "external_gpu_contexts": 0
+          }
+        ]
+      },
+      "medians_ms": {
+        "edge": 0.05397666245698929
+      },
+      "peaks_MiB": {
+        "edge": 3.8759765625
+      }
+    }
+  ]
+}

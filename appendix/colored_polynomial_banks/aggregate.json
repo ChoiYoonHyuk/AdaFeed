@@ -1,0 +1,1179 @@
+{
+  "mode": "full",
+  "began_utc": "2026-11-22T08:20:07.744105+00:00",
+  "gpu": "NVIDIA H100 PCIe",
+  "gpu_bytes": 85028372480,
+  "cuda": "12.8",
+  "torch": "2.11.0+cu128",
+  "width": 64,
+  "cap_seconds": 120.0,
+  "fp": "FP64",
+  "cuda_init_seconds": 0.1581843215972185,
+  "host_cpu": "Intel(R) Xeon(R) Gold 6430",
+  "archive_sha256": "450b8733635d887466a2b96b26411f6e62caf7006f8a264f59cf9b5d75cdf549",
+  "source_sha256": "c0abd6f77e81bcbe0fa27eb72bbd46b0d4bf2298079d8a7ee92723033000d9fe",
+  "cpp_sha256": "95661a8b0dc8134d5f39ea8ef90970c381294da7d4c93f9c70c855f5d983407a",
+  "binary_sha256": "67d1444c35f756ff6f4bfb5d4655392b47f23e5ec7ae23c355ffaece66ddf16f",
+  "protocol_sha256": "81c3068507c3ed4bf630548b88926d2063ec098a3b8c844d5df07d9da8f813dc",
+  "cases": [
+    {
+      "n": 4096,
+      "k": 8,
+      "order": [
+        "identity",
+        "color"
+      ],
+      "methods": {
+        "identity": {
+          "utc": "2026-11-22T08:20:07.845176+00:00",
+          "contexts_before": {
+            "external_compute_contexts": 0,
+            "external_allocated_MiB": 0,
+            "gpu_model_clock_MHz_memory_used_MiB": "NVIDIA H100 PCIe, 1755, 551"
+          },
+          "contexts_after": {
+            "external_compute_contexts": 0,
+            "external_allocated_MiB": 0,
+            "gpu_model_clock_MHz_memory_used_MiB": "NVIDIA H100 PCIe, 1755, 573"
+          },
+          "graph": {
+            "full_nodes": 1088092,
+            "full_edges": 1541898,
+            "raw_directed_rows": 3083796,
+            "bfs_start_original_id": 0,
+            "used_largest_component_fallback": false,
+            "bfs_component_nodes": 1087562,
+            "prefixes_sha256": {
+              "4096": "8819bdba9aad2a8e3815dfee9ffbed0370e1948622b651ada84fb6713cfd3dc5",
+              "16384": "94f5eec3463af1a76e697189ae410301fd6e1efc5a7a4bfebc2eaf7c5fc5ff0c",
+              "65536": "86d45bbaebeea6f6c36cc29eb0435f3703fe8887ba6188b3a3f67b7113314834"
+            },
+            "prefix_edges": 5923,
+            "degree_min": 1,
+            "degree_max": 7,
+            "normalized_csr_sha256": "0f5c35552df865a0b2e1020f54b6faa0463ff31c2f77bced53e21085775baee2"
+          },
+          "method": "identity",
+          "columns": 4096,
+          "blocks_per_bank": 64,
+          "width": 64,
+          "cold_gpu": {
+            "seconds": 0.08704052399843931,
+            "censored": false,
+            "completed_blocks": 128,
+            "planned_blocks": 128,
+            "resident_input_MiB": 0.24609375,
+            "peak_allocated_MiB": 8.84375,
+            "peak_additional_MiB": 8.59765625
+          },
+          "cold_total_seconds": 0.8795320214703679,
+          "cpu_common_graph_seconds": 0.7903031809255481,
+          "cpu_coloring_seconds": 0.0,
+          "gpu_staging_seconds": 0.0012298105284571648,
+          "process_rss_cold": {
+            "initial_MiB": 735.21875,
+            "peak_MiB": 885.87890625,
+            "increment_MiB": 150.66015625
+          },
+          "verify_coloring_seconds": 0.0,
+          "ordered_pairs_checked_in_balls": null,
+          "color_sha256": null,
+          "resident_trials": [
+            {
+              "seconds": 0.04112754110246897,
+              "censored": false,
+              "completed_blocks": 128,
+              "planned_blocks": 128,
+              "resident_input_MiB": 0.24609375,
+              "peak_allocated_MiB": 8.84375,
+              "peak_additional_MiB": 8.59765625
+            },
+            {
+              "seconds": 0.04095008596777916,
+              "censored": false,
+              "completed_blocks": 128,
+              "planned_blocks": 128,
+              "resident_input_MiB": 0.24609375,
+              "peak_allocated_MiB": 8.84375,
+              "peak_additional_MiB": 8.59765625
+            },
+            {
+              "seconds": 0.04100972507148981,
+              "censored": false,
+              "completed_blocks": 128,
+              "planned_blocks": 128,
+              "resident_input_MiB": 0.24609375,
+              "peak_allocated_MiB": 8.84375,
+              "peak_additional_MiB": 8.59765625
+            }
+          ],
+          "resident_median_seconds": 0.04100972507148981
+        },
+        "color": {
+          "utc": "2026-11-22T08:20:09.037237+00:00",
+          "contexts_before": {
+            "external_compute_contexts": 0,
+            "external_allocated_MiB": 0,
+            "gpu_model_clock_MHz_memory_used_MiB": "NVIDIA H100 PCIe, 1755, 551"
+          },
+          "contexts_after": {
+            "external_compute_contexts": 0,
+            "external_allocated_MiB": 0,
+            "gpu_model_clock_MHz_memory_used_MiB": "NVIDIA H100 PCIe, 1755, 573"
+          },
+          "graph": {
+            "full_nodes": 1088092,
+            "full_edges": 1541898,
+            "raw_directed_rows": 3083796,
+            "bfs_start_original_id": 0,
+            "used_largest_component_fallback": false,
+            "bfs_component_nodes": 1087562,
+            "prefixes_sha256": {
+              "4096": "8819bdba9aad2a8e3815dfee9ffbed0370e1948622b651ada84fb6713cfd3dc5",
+              "16384": "94f5eec3463af1a76e697189ae410301fd6e1efc5a7a4bfebc2eaf7c5fc5ff0c",
+              "65536": "86d45bbaebeea6f6c36cc29eb0435f3703fe8887ba6188b3a3f67b7113314834"
+            },
+            "prefix_edges": 5923,
+            "degree_min": 1,
+            "degree_max": 7,
+            "normalized_csr_sha256": "0f5c35552df865a0b2e1020f54b6faa0463ff31c2f77bced53e21085775baee2"
+          },
+          "method": "color",
+          "columns": 85,
+          "blocks_per_bank": 2,
+          "width": 64,
+          "cold_gpu": {
+            "seconds": 0.001910267397761345,
+            "censored": false,
+            "completed_blocks": 4,
+            "planned_blocks": 4,
+            "resident_input_MiB": 0.24609375,
+            "peak_allocated_MiB": 8.84375,
+            "peak_additional_MiB": 8.59765625
+          },
+          "cold_total_seconds": 0.7725537968799472,
+          "cpu_common_graph_seconds": 0.7590908240526915,
+          "cpu_coloring_seconds": 0.009272497147321701,
+          "gpu_staging_seconds": 0.0010068928822875023,
+          "process_rss_cold": {
+            "initial_MiB": 872.5703125,
+            "peak_MiB": 1020.796875,
+            "increment_MiB": 148.2265625
+          },
+          "verify_coloring_seconds": 0.008238441310822964,
+          "ordered_pairs_checked_in_balls": 571198,
+          "color_sha256": "ee14d8e1916149885c6c6f22d244f9e4d1296fa7b4610e124ec054447a53dda1",
+          "resident_trials": [
+            {
+              "seconds": 0.0015245107933878899,
+              "censored": false,
+              "completed_blocks": 4,
+              "planned_blocks": 4,
+              "resident_input_MiB": 0.24609375,
+              "peak_allocated_MiB": 8.84375,
+              "peak_additional_MiB": 8.59765625
+            },
+            {
+              "seconds": 0.001425216905772686,
+              "censored": false,
+              "completed_blocks": 4,
+              "planned_blocks": 4,
+              "resident_input_MiB": 0.24609375,
+              "peak_allocated_MiB": 8.84375,
+              "peak_additional_MiB": 8.59765625
+            },
+            {
+              "seconds": 0.0014297431334853172,
+              "censored": false,
+              "completed_blocks": 4,
+              "planned_blocks": 4,
+              "resident_input_MiB": 0.24609375,
+              "peak_allocated_MiB": 8.84375,
+              "peak_additional_MiB": 8.59765625
+            }
+          ],
+          "resident_median_seconds": 0.0014297431334853172
+        }
+      },
+      "verification": {
+        "crosschecked_sample_roots": 128,
+        "root_sample_sha256": "9c5e8f8cb179c4512d3eda0ee59467b838b17b29f5e478f4b3765e604f4ed3da",
+        "maximum_field_error": 2.220446049250313e-16,
+        "sampled_errors": [
+          0.0,
+          1.1102230246251565e-16
+        ],
+        "full_bank_errors": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "n": 4096,
+      "k": 24,
+      "order": [
+        "color",
+        "identity"
+      ],
+      "methods": {
+        "color": {
+          "utc": "2026-11-22T08:20:10.018318+00:00",
+          "contexts_before": {
+            "external_compute_contexts": 0,
+            "external_allocated_MiB": 0,
+            "gpu_model_clock_MHz_memory_used_MiB": "NVIDIA H100 PCIe, 1755, 551"
+          },
+          "contexts_after": {
+            "external_compute_contexts": 0,
+            "external_allocated_MiB": 0,
+            "gpu_model_clock_MHz_memory_used_MiB": "NVIDIA H100 PCIe, 1755, 573"
+          },
+          "graph": {
+            "full_nodes": 1088092,
+            "full_edges": 1541898,
+            "raw_directed_rows": 3083796,
+            "bfs_start_original_id": 0,
+            "used_largest_component_fallback": false,
+            "bfs_component_nodes": 1087562,
+            "prefixes_sha256": {
+              "4096": "8819bdba9aad2a8e3815dfee9ffbed0370e1948622b651ada84fb6713cfd3dc5",
+              "16384": "94f5eec3463af1a76e697189ae410301fd6e1efc5a7a4bfebc2eaf7c5fc5ff0c",
+              "65536": "86d45bbaebeea6f6c36cc29eb0435f3703fe8887ba6188b3a3f67b7113314834"
+            },
+            "prefix_edges": 5923,
+            "degree_min": 1,
+            "degree_max": 7,
+            "normalized_csr_sha256": "0f5c35552df865a0b2e1020f54b6faa0463ff31c2f77bced53e21085775baee2"
+          },
+          "method": "color",
+          "columns": 913,
+          "blocks_per_bank": 15,
+          "width": 64,
+          "cold_gpu": {
+            "seconds": 0.027956432662904263,
+            "censored": false,
+            "completed_blocks": 30,
+            "planned_blocks": 30,
+            "resident_input_MiB": 0.24609375,
+            "peak_allocated_MiB": 9.84375,
+            "peak_additional_MiB": 9.59765625
+          },
+          "cold_total_seconds": 0.8742803689092398,
+          "cpu_common_graph_seconds": 0.7418944807723165,
+          "cpu_coloring_seconds": 0.10237581469118595,
+          "gpu_staging_seconds": 0.000810631550848484,
+          "process_rss_cold": {
+            "initial_MiB": 910.1953125,
+            "peak_MiB": 1021.12109375,
+            "increment_MiB": 110.92578125
+          },
+          "verify_coloring_seconds": 0.09693921357393265,
+          "ordered_pairs_checked_in_balls": 6379904,
+          "color_sha256": "be6abdb4d6160fb2ba4216769da32e0636bc3111fa2b4445afba3479aed6c0b1",
+          "resident_trials": [
+            {
+              "seconds": 0.027273922227323055,
+              "censored": false,
+              "completed_blocks": 30,
+              "planned_blocks": 30,
+              "resident_input_MiB": 0.24609375,
+              "peak_allocated_MiB": 9.84375,
+              "peak_additional_MiB": 9.59765625
+            },
+            {
+              "seconds": 0.02713101916015148,
+              "censored": false,
+              "completed_blocks": 30,
+              "planned_blocks": 30,
+              "resident_input_MiB": 0.24609375,
+              "peak_allocated_MiB": 9.84375,
+              "peak_additional_MiB": 9.59765625
+            },
+            {
+              "seconds": 0.027075822465121746,
+              "censored": false,
+              "completed_blocks": 30,
+              "planned_blocks": 30,
+              "resident_input_MiB": 0.24609375,
+              "peak_allocated_MiB": 9.84375,
+              "peak_additional_MiB": 9.59765625
+            }
+          ],
+          "resident_median_seconds": 0.02713101916015148
+        },
+        "identity": {
+          "utc": "2026-11-22T08:20:11.258050+00:00",
+          "contexts_before": {
+            "external_compute_contexts": 0,
+            "external_allocated_MiB": 0,
+            "gpu_model_clock_MHz_memory_used_MiB": "NVIDIA H100 PCIe, 1755, 551"
+          },
+          "contexts_after": {
+            "external_compute_contexts": 0,
+            "external_allocated_MiB": 0,
+            "gpu_model_clock_MHz_memory_used_MiB": "NVIDIA H100 PCIe, 1755, 573"
+          },
+          "graph": {
+            "full_nodes": 1088092,
+            "full_edges": 1541898,
+            "raw_directed_rows": 3083796,
+            "bfs_start_original_id": 0,
+            "used_largest_component_fallback": false,
+            "bfs_component_nodes": 1087562,
+            "prefixes_sha256": {
+              "4096": "8819bdba9aad2a8e3815dfee9ffbed0370e1948622b651ada84fb6713cfd3dc5",
+              "16384": "94f5eec3463af1a76e697189ae410301fd6e1efc5a7a4bfebc2eaf7c5fc5ff0c",
+              "65536": "86d45bbaebeea6f6c36cc29eb0435f3703fe8887ba6188b3a3f67b7113314834"
+            },
+            "prefix_edges": 5923,
+            "degree_min": 1,
+            "degree_max": 7,
+            "normalized_csr_sha256": "0f5c35552df865a0b2e1020f54b6faa0463ff31c2f77bced53e21085775baee2"
+          },
+          "method": "identity",
+          "columns": 4096,
+          "blocks_per_bank": 64,
+          "width": 64,
+          "cold_gpu": {
+            "seconds": 0.11517334543168545,
+            "censored": false,
+            "completed_blocks": 128,
+            "planned_blocks": 128,
+            "resident_input_MiB": 0.24609375,
+            "peak_allocated_MiB": 9.84375,
+            "peak_additional_MiB": 9.59765625
+          },
+          "cold_total_seconds": 0.8800400523468852,
+          "cpu_common_graph_seconds": 0.7626915881410241,
+          "cpu_coloring_seconds": 0.0,
+          "gpu_staging_seconds": 0.0007006842643022537,
+          "process_rss_cold": {
+            "initial_MiB": 909.88671875,
+            "peak_MiB": 1021.1328125,
+            "increment_MiB": 111.24609375
+          },
+          "verify_coloring_seconds": 0.0,
+          "ordered_pairs_checked_in_balls": null,
+          "color_sha256": null,
+          "resident_trials": [
+            {
+              "seconds": 0.11376866046339273,
+              "censored": false,
+              "completed_blocks": 128,
+              "planned_blocks": 128,
+              "resident_input_MiB": 0.24609375,
+              "peak_allocated_MiB": 9.84375,
+              "peak_additional_MiB": 9.59765625
+            },
+            {
+              "seconds": 0.1133614731952548,
+              "censored": false,
+              "completed_blocks": 128,
+              "planned_blocks": 128,
+              "resident_input_MiB": 0.24609375,
+              "peak_allocated_MiB": 9.84375,
+              "peak_additional_MiB": 9.59765625
+            },
+            {
+              "seconds": 0.11322901211678982,
+              "censored": false,
+              "completed_blocks": 128,
+              "planned_blocks": 128,
+              "resident_input_MiB": 0.24609375,
+              "peak_allocated_MiB": 9.84375,
+              "peak_additional_MiB": 9.59765625
+            }
+          ],
+          "resident_median_seconds": 0.1133614731952548
+        }
+      },
+      "verification": {
+        "crosschecked_sample_roots": 128,
+        "root_sample_sha256": "9c5e8f8cb179c4512d3eda0ee59467b838b17b29f5e478f4b3765e604f4ed3da",
+        "maximum_field_error": 2.220446049250313e-16,
+        "sampled_errors": [
+          0.0,
+          1.1102230246251565e-16
+        ],
+        "full_bank_errors": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "n": 16384,
+      "k": 8,
+      "order": [
+        "identity",
+        "color"
+      ],
+      "methods": {
+        "identity": {
+          "utc": "2026-11-22T08:20:12.670250+00:00",
+          "contexts_before": {
+            "external_compute_contexts": 0,
+            "external_allocated_MiB": 0,
+            "gpu_model_clock_MHz_memory_used_MiB": "NVIDIA H100 PCIe, 1755, 551"
+          },
+          "contexts_after": {
+            "external_compute_contexts": 0,
+            "external_allocated_MiB": 0,
+            "gpu_model_clock_MHz_memory_used_MiB": "NVIDIA H100 PCIe, 1755, 593"
+          },
+          "graph": {
+            "full_nodes": 1088092,
+            "full_edges": 1541898,
+            "raw_directed_rows": 3083796,
+            "bfs_start_original_id": 0,
+            "used_largest_component_fallback": false,
+            "bfs_component_nodes": 1087562,
+            "prefixes_sha256": {
+              "4096": "8819bdba9aad2a8e3815dfee9ffbed0370e1948622b651ada84fb6713cfd3dc5",
+              "16384": "94f5eec3463af1a76e697189ae410301fd6e1efc5a7a4bfebc2eaf7c5fc5ff0c",
+              "65536": "86d45bbaebeea6f6c36cc29eb0435f3703fe8887ba6188b3a3f67b7113314834"
+            },
+            "prefix_edges": 23307,
+            "degree_min": 1,
+            "degree_max": 7,
+            "normalized_csr_sha256": "d2ac69ebe32fadbaef3f87f3ccc6d8851093bd6321c1cccbf1af0b0d38183999"
+          },
+          "method": "identity",
+          "columns": 16384,
+          "blocks_per_bank": 256,
+          "width": 64,
+          "cold_gpu": {
+            "seconds": 0.1996549814939499,
+            "censored": false,
+            "completed_blocks": 512,
+            "planned_blocks": 512,
+            "resident_input_MiB": 0.97216796875,
+            "peak_allocated_MiB": 35.3623046875,
+            "peak_additional_MiB": 34.39013671875
+          },
+          "cold_total_seconds": 0.9469212125986814,
+          "cpu_common_graph_seconds": 0.7446107622236013,
+          "cpu_coloring_seconds": 0.0,
+          "gpu_staging_seconds": 0.000852423720061779,
+          "process_rss_cold": {
+            "initial_MiB": 911.5234375,
+            "peak_MiB": 1021.1484375,
+            "increment_MiB": 109.625
+          },
+          "verify_coloring_seconds": 0.0,
+          "ordered_pairs_checked_in_balls": null,
+          "color_sha256": null,
+          "resident_trials": [
+            {
+              "seconds": 0.1972744232043624,
+              "censored": false,
+              "completed_blocks": 512,
+              "planned_blocks": 512,
+              "resident_input_MiB": 0.97216796875,
+              "peak_allocated_MiB": 35.3623046875,
+              "peak_additional_MiB": 34.39013671875
+            },
+            {
+              "seconds": 0.1974624451249838,
+              "censored": false,
+              "completed_blocks": 512,
+              "planned_blocks": 512,
+              "resident_input_MiB": 0.97216796875,
+              "peak_allocated_MiB": 35.3623046875,
+              "peak_additional_MiB": 34.39013671875
+            },
+            {
+              "seconds": 0.2024853816255927,
+              "censored": false,
+              "completed_blocks": 512,
+              "planned_blocks": 512,
+              "resident_input_MiB": 0.97216796875,
+              "peak_allocated_MiB": 35.3623046875,
+              "peak_additional_MiB": 34.39013671875
+            }
+          ],
+          "resident_median_seconds": 0.1974624451249838
+        },
+        "color": {
+          "utc": "2026-11-22T08:20:14.417216+00:00",
+          "contexts_before": {
+            "external_compute_contexts": 0,
+            "external_allocated_MiB": 0,
+            "gpu_model_clock_MHz_memory_used_MiB": "NVIDIA H100 PCIe, 1755, 551"
+          },
+          "contexts_after": {
+            "external_compute_contexts": 0,
+            "external_allocated_MiB": 0,
+            "gpu_model_clock_MHz_memory_used_MiB": "NVIDIA H100 PCIe, 1755, 593"
+          },
+          "graph": {
+            "full_nodes": 1088092,
+            "full_edges": 1541898,
+            "raw_directed_rows": 3083796,
+            "bfs_start_original_id": 0,
+            "used_largest_component_fallback": false,
+            "bfs_component_nodes": 1087562,
+            "prefixes_sha256": {
+              "4096": "8819bdba9aad2a8e3815dfee9ffbed0370e1948622b651ada84fb6713cfd3dc5",
+              "16384": "94f5eec3463af1a76e697189ae410301fd6e1efc5a7a4bfebc2eaf7c5fc5ff0c",
+              "65536": "86d45bbaebeea6f6c36cc29eb0435f3703fe8887ba6188b3a3f67b7113314834"
+            },
+            "prefix_edges": 23307,
+            "degree_min": 1,
+            "degree_max": 7,
+            "normalized_csr_sha256": "d2ac69ebe32fadbaef3f87f3ccc6d8851093bd6321c1cccbf1af0b0d38183999"
+          },
+          "method": "color",
+          "columns": 86,
+          "blocks_per_bank": 2,
+          "width": 64,
+          "cold_gpu": {
+            "seconds": 0.0023257583379745483,
+            "censored": false,
+            "completed_blocks": 4,
+            "planned_blocks": 4,
+            "resident_input_MiB": 0.97216796875,
+            "peak_allocated_MiB": 35.3623046875,
+            "peak_additional_MiB": 34.39013671875
+          },
+          "cold_total_seconds": 0.801237078383565,
+          "cpu_common_graph_seconds": 0.7605499811470509,
+          "cpu_coloring_seconds": 0.03491717949509621,
+          "gpu_staging_seconds": 0.0014749206602573395,
+          "process_rss_cold": {
+            "initial_MiB": 911.8515625,
+            "peak_MiB": 1023.47265625,
+            "increment_MiB": 111.62109375
+          },
+          "verify_coloring_seconds": 0.031351047568023205,
+          "ordered_pairs_checked_in_balls": 2202438,
+          "color_sha256": "e8805b0c5c0d7ccd7b1e5c249af9d5fa0c59cbe9c23bc5e1f0bf328dd04aa4dd",
+          "resident_trials": [
+            {
+              "seconds": 0.0019353553652763367,
+              "censored": false,
+              "completed_blocks": 4,
+              "planned_blocks": 4,
+              "resident_input_MiB": 0.97216796875,
+              "peak_allocated_MiB": 35.3623046875,
+              "peak_additional_MiB": 34.39013671875
+            },
+            {
+              "seconds": 0.0018245987594127655,
+              "censored": false,
+              "completed_blocks": 4,
+              "planned_blocks": 4,
+              "resident_input_MiB": 0.97216796875,
+              "peak_allocated_MiB": 35.3623046875,
+              "peak_additional_MiB": 34.39013671875
+            },
+            {
+              "seconds": 0.001816888339817524,
+              "censored": false,
+              "completed_blocks": 4,
+              "planned_blocks": 4,
+              "resident_input_MiB": 0.97216796875,
+              "peak_allocated_MiB": 35.3623046875,
+              "peak_additional_MiB": 34.39013671875
+            }
+          ],
+          "resident_median_seconds": 0.0018245987594127655
+        }
+      },
+      "verification": {
+        "crosschecked_sample_roots": 128,
+        "root_sample_sha256": "6d6a0c400f5ad781a739280239bdf779f5eaf7d28cfa0a32b167e92b2a6f3920",
+        "maximum_field_error": 2.220446049250313e-16,
+        "sampled_errors": [
+          0.0,
+          1.1102230246251565e-16
+        ],
+        "full_bank_errors": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "n": 16384,
+      "k": 24,
+      "order": [
+        "color",
+        "identity"
+      ],
+      "methods": {
+        "color": {
+          "utc": "2026-11-22T08:20:15.444612+00:00",
+          "contexts_before": {
+            "external_compute_contexts": 0,
+            "external_allocated_MiB": 0,
+            "gpu_model_clock_MHz_memory_used_MiB": "NVIDIA H100 PCIe, 1755, 551"
+          },
+          "contexts_after": {
+            "external_compute_contexts": 0,
+            "external_allocated_MiB": 0,
+            "gpu_model_clock_MHz_memory_used_MiB": "NVIDIA H100 PCIe, 1755, 613"
+          },
+          "graph": {
+            "full_nodes": 1088092,
+            "full_edges": 1541898,
+            "raw_directed_rows": 3083796,
+            "bfs_start_original_id": 0,
+            "used_largest_component_fallback": false,
+            "bfs_component_nodes": 1087562,
+            "prefixes_sha256": {
+              "4096": "8819bdba9aad2a8e3815dfee9ffbed0370e1948622b651ada84fb6713cfd3dc5",
+              "16384": "94f5eec3463af1a76e697189ae410301fd6e1efc5a7a4bfebc2eaf7c5fc5ff0c",
+              "65536": "86d45bbaebeea6f6c36cc29eb0435f3703fe8887ba6188b3a3f67b7113314834"
+            },
+            "prefix_edges": 23307,
+            "degree_min": 1,
+            "degree_max": 7,
+            "normalized_csr_sha256": "d2ac69ebe32fadbaef3f87f3ccc6d8851093bd6321c1cccbf1af0b0d38183999"
+          },
+          "method": "color",
+          "columns": 903,
+          "blocks_per_bank": 15,
+          "width": 64,
+          "cold_gpu": {
+            "seconds": 0.036181808449327946,
+            "censored": false,
+            "completed_blocks": 30,
+            "planned_blocks": 30,
+            "resident_input_MiB": 0.97216796875,
+            "peak_allocated_MiB": 39.3623046875,
+            "peak_additional_MiB": 38.39013671875
+          },
+          "cold_total_seconds": 1.2519973339512944,
+          "cpu_common_graph_seconds": 0.7515614312142134,
+          "cpu_coloring_seconds": 0.460737744346261,
+          "gpu_staging_seconds": 0.0018723933026194572,
+          "process_rss_cold": {
+            "initial_MiB": 913.7265625,
+            "peak_MiB": 1021.47265625,
+            "increment_MiB": 107.74609375
+          },
+          "verify_coloring_seconds": 0.43868765514343977,
+          "ordered_pairs_checked_in_balls": 28264180,
+          "color_sha256": "bd8ab7d655268e8c448d2bde0990c71feee8e93bb261637a9eb62b3008f69511",
+          "resident_trials": [
+            {
+              "seconds": 0.034526181407272816,
+              "censored": false,
+              "completed_blocks": 30,
+              "planned_blocks": 30,
+              "resident_input_MiB": 0.97216796875,
+              "peak_allocated_MiB": 39.3623046875,
+              "peak_additional_MiB": 38.39013671875
+            },
+            {
+              "seconds": 0.03453364409506321,
+              "censored": false,
+              "completed_blocks": 30,
+              "planned_blocks": 30,
+              "resident_input_MiB": 0.97216796875,
+              "peak_allocated_MiB": 39.3623046875,
+              "peak_additional_MiB": 38.39013671875
+            },
+            {
+              "seconds": 0.03461755812168121,
+              "censored": false,
+              "completed_blocks": 30,
+              "planned_blocks": 30,
+              "resident_input_MiB": 0.97216796875,
+              "peak_allocated_MiB": 39.3623046875,
+              "peak_additional_MiB": 38.39013671875
+            }
+          ],
+          "resident_median_seconds": 0.03453364409506321
+        },
+        "identity": {
+          "utc": "2026-11-22T08:20:17.454749+00:00",
+          "contexts_before": {
+            "external_compute_contexts": 0,
+            "external_allocated_MiB": 0,
+            "gpu_model_clock_MHz_memory_used_MiB": "NVIDIA H100 PCIe, 1755, 551"
+          },
+          "contexts_after": {
+            "external_compute_contexts": 0,
+            "external_allocated_MiB": 0,
+            "gpu_model_clock_MHz_memory_used_MiB": "NVIDIA H100 PCIe, 1755, 613"
+          },
+          "graph": {
+            "full_nodes": 1088092,
+            "full_edges": 1541898,
+            "raw_directed_rows": 3083796,
+            "bfs_start_original_id": 0,
+            "used_largest_component_fallback": false,
+            "bfs_component_nodes": 1087562,
+            "prefixes_sha256": {
+              "4096": "8819bdba9aad2a8e3815dfee9ffbed0370e1948622b651ada84fb6713cfd3dc5",
+              "16384": "94f5eec3463af1a76e697189ae410301fd6e1efc5a7a4bfebc2eaf7c5fc5ff0c",
+              "65536": "86d45bbaebeea6f6c36cc29eb0435f3703fe8887ba6188b3a3f67b7113314834"
+            },
+            "prefix_edges": 23307,
+            "degree_min": 1,
+            "degree_max": 7,
+            "normalized_csr_sha256": "d2ac69ebe32fadbaef3f87f3ccc6d8851093bd6321c1cccbf1af0b0d38183999"
+          },
+          "method": "identity",
+          "columns": 16384,
+          "blocks_per_bank": 256,
+          "width": 64,
+          "cold_gpu": {
+            "seconds": 0.5480690766125917,
+            "censored": false,
+            "completed_blocks": 512,
+            "planned_blocks": 512,
+            "resident_input_MiB": 0.97216796875,
+            "peak_allocated_MiB": 39.3623046875,
+            "peak_additional_MiB": 38.39013671875
+          },
+          "cold_total_seconds": 1.2938635302707553,
+          "cpu_common_graph_seconds": 0.7446547569707036,
+          "cpu_coloring_seconds": 0.0,
+          "gpu_staging_seconds": 0.0008449479937553406,
+          "process_rss_cold": {
+            "initial_MiB": 910.953125,
+            "peak_MiB": 1030.20703125,
+            "increment_MiB": 119.25390625
+          },
+          "verify_coloring_seconds": 0.0,
+          "ordered_pairs_checked_in_balls": null,
+          "color_sha256": null,
+          "resident_trials": [
+            {
+              "seconds": 0.5279607847332954,
+              "censored": false,
+              "completed_blocks": 512,
+              "planned_blocks": 512,
+              "resident_input_MiB": 0.97216796875,
+              "peak_allocated_MiB": 39.3623046875,
+              "peak_additional_MiB": 38.39013671875
+            },
+            {
+              "seconds": 0.5321943145245314,
+              "censored": false,
+              "completed_blocks": 512,
+              "planned_blocks": 512,
+              "resident_input_MiB": 0.97216796875,
+              "peak_allocated_MiB": 39.3623046875,
+              "peak_additional_MiB": 38.39013671875
+            },
+            {
+              "seconds": 0.5276327859610319,
+              "censored": false,
+              "completed_blocks": 512,
+              "planned_blocks": 512,
+              "resident_input_MiB": 0.97216796875,
+              "peak_allocated_MiB": 39.3623046875,
+              "peak_additional_MiB": 38.39013671875
+            }
+          ],
+          "resident_median_seconds": 0.5279607847332954
+        }
+      },
+      "verification": {
+        "crosschecked_sample_roots": 128,
+        "root_sample_sha256": "6d6a0c400f5ad781a739280239bdf779f5eaf7d28cfa0a32b167e92b2a6f3920",
+        "maximum_field_error": 2.220446049250313e-16,
+        "sampled_errors": [
+          0.0,
+          1.1102230246251565e-16
+        ],
+        "full_bank_errors": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "n": 65536,
+      "k": 8,
+      "order": [
+        "identity",
+        "color"
+      ],
+      "methods": {
+        "identity": {
+          "utc": "2026-11-22T08:20:20.562165+00:00",
+          "contexts_before": {
+            "external_compute_contexts": 0,
+            "external_allocated_MiB": 0,
+            "gpu_model_clock_MHz_memory_used_MiB": "NVIDIA H100 PCIe, 1755, 551"
+          },
+          "contexts_after": {
+            "external_compute_contexts": 0,
+            "external_allocated_MiB": 0,
+            "gpu_model_clock_MHz_memory_used_MiB": "NVIDIA H100 PCIe, 1755, 703"
+          },
+          "graph": {
+            "full_nodes": 1088092,
+            "full_edges": 1541898,
+            "raw_directed_rows": 3083796,
+            "bfs_start_original_id": 0,
+            "used_largest_component_fallback": false,
+            "bfs_component_nodes": 1087562,
+            "prefixes_sha256": {
+              "4096": "8819bdba9aad2a8e3815dfee9ffbed0370e1948622b651ada84fb6713cfd3dc5",
+              "16384": "94f5eec3463af1a76e697189ae410301fd6e1efc5a7a4bfebc2eaf7c5fc5ff0c",
+              "65536": "86d45bbaebeea6f6c36cc29eb0435f3703fe8887ba6188b3a3f67b7113314834"
+            },
+            "prefix_edges": 92108,
+            "degree_min": 1,
+            "degree_max": 7,
+            "normalized_csr_sha256": "58c8a2d0cbe2fc74a6f682d7fc4e1440533b31b4b527d752a50621e4c882fe3b"
+          },
+          "method": "identity",
+          "columns": 65536,
+          "blocks_per_bank": 1024,
+          "width": 64,
+          "cold_gpu": {
+            "seconds": 2.4994743447750807,
+            "censored": false,
+            "completed_blocks": 2048,
+            "planned_blocks": 2048,
+            "resident_input_MiB": 3.859375,
+            "peak_allocated_MiB": 141.41796875,
+            "peak_additional_MiB": 137.55859375
+          },
+          "cold_total_seconds": 3.2625066097825766,
+          "cpu_common_graph_seconds": 0.7609147625043988,
+          "cpu_coloring_seconds": 0.0,
+          "gpu_staging_seconds": 0.0017492901533842087,
+          "process_rss_cold": {
+            "initial_MiB": 873.98828125,
+            "peak_MiB": 1021.48828125,
+            "increment_MiB": 147.5
+          },
+          "verify_coloring_seconds": 0.0,
+          "ordered_pairs_checked_in_balls": null,
+          "color_sha256": null,
+          "resident_trials": [
+            {
+              "seconds": 2.4881609175354242,
+              "censored": false,
+              "completed_blocks": 2048,
+              "planned_blocks": 2048,
+              "resident_input_MiB": 3.859375,
+              "peak_allocated_MiB": 141.41796875,
+              "peak_additional_MiB": 137.55859375
+            },
+            {
+              "seconds": 2.4947317205369473,
+              "censored": false,
+              "completed_blocks": 2048,
+              "planned_blocks": 2048,
+              "resident_input_MiB": 3.859375,
+              "peak_allocated_MiB": 141.41796875,
+              "peak_additional_MiB": 137.55859375
+            },
+            {
+              "seconds": 2.487789229489863,
+              "censored": false,
+              "completed_blocks": 2048,
+              "planned_blocks": 2048,
+              "resident_input_MiB": 3.859375,
+              "peak_allocated_MiB": 141.41796875,
+              "peak_additional_MiB": 137.55859375
+            }
+          ],
+          "resident_median_seconds": 2.4881609175354242
+        },
+        "color": {
+          "utc": "2026-11-22T08:20:31.510331+00:00",
+          "contexts_before": {
+            "external_compute_contexts": 0,
+            "external_allocated_MiB": 0,
+            "gpu_model_clock_MHz_memory_used_MiB": "NVIDIA H100 PCIe, 1755, 551"
+          },
+          "contexts_after": {
+            "external_compute_contexts": 0,
+            "external_allocated_MiB": 0,
+            "gpu_model_clock_MHz_memory_used_MiB": "NVIDIA H100 PCIe, 1755, 703"
+          },
+          "graph": {
+            "full_nodes": 1088092,
+            "full_edges": 1541898,
+            "raw_directed_rows": 3083796,
+            "bfs_start_original_id": 0,
+            "used_largest_component_fallback": false,
+            "bfs_component_nodes": 1087562,
+            "prefixes_sha256": {
+              "4096": "8819bdba9aad2a8e3815dfee9ffbed0370e1948622b651ada84fb6713cfd3dc5",
+              "16384": "94f5eec3463af1a76e697189ae410301fd6e1efc5a7a4bfebc2eaf7c5fc5ff0c",
+              "65536": "86d45bbaebeea6f6c36cc29eb0435f3703fe8887ba6188b3a3f67b7113314834"
+            },
+            "prefix_edges": 92108,
+            "degree_min": 1,
+            "degree_max": 7,
+            "normalized_csr_sha256": "58c8a2d0cbe2fc74a6f682d7fc4e1440533b31b4b527d752a50621e4c882fe3b"
+          },
+          "method": "color",
+          "columns": 97,
+          "blocks_per_bank": 2,
+          "width": 64,
+          "cold_gpu": {
+            "seconds": 0.00578841008245945,
+            "censored": false,
+            "completed_blocks": 4,
+            "planned_blocks": 4,
+            "resident_input_MiB": 3.859375,
+            "peak_allocated_MiB": 141.41796875,
+            "peak_additional_MiB": 137.55859375
+          },
+          "cold_total_seconds": 0.8858131570741534,
+          "cpu_common_graph_seconds": 0.7440934302285314,
+          "cpu_coloring_seconds": 0.1298051904886961,
+          "gpu_staging_seconds": 0.0041784681379795074,
+          "process_rss_cold": {
+            "initial_MiB": 974.69921875,
+            "peak_MiB": 1045.33203125,
+            "increment_MiB": 70.6328125
+          },
+          "verify_coloring_seconds": 0.11648081243038177,
+          "ordered_pairs_checked_in_balls": 8529632,
+          "color_sha256": "c6d019237ad0209ae7e7a85bc587914eb227430ff8fde18921582a398bbb4870",
+          "resident_trials": [
+            {
+              "seconds": 0.005326674319803715,
+              "censored": false,
+              "completed_blocks": 4,
+              "planned_blocks": 4,
+              "resident_input_MiB": 3.859375,
+              "peak_allocated_MiB": 141.41796875,
+              "peak_additional_MiB": 137.55859375
+            },
+            {
+              "seconds": 0.005255194380879402,
+              "censored": false,
+              "completed_blocks": 4,
+              "planned_blocks": 4,
+              "resident_input_MiB": 3.859375,
+              "peak_allocated_MiB": 141.41796875,
+              "peak_additional_MiB": 137.55859375
+            },
+            {
+              "seconds": 0.005233408883213997,
+              "censored": false,
+              "completed_blocks": 4,
+              "planned_blocks": 4,
+              "resident_input_MiB": 3.859375,
+              "peak_allocated_MiB": 141.41796875,
+              "peak_additional_MiB": 137.55859375
+            }
+          ],
+          "resident_median_seconds": 0.005255194380879402
+        }
+      },
+      "verification": {
+        "crosschecked_sample_roots": 128,
+        "root_sample_sha256": "5a39e8273a6390b40a00dc67b54dba048fac2b43d83256ffead04d0a89fdb764",
+        "maximum_field_error": 2.220446049250313e-16,
+        "sampled_errors": [
+          0.0,
+          1.1102230246251565e-16
+        ],
+        "full_bank_errors": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "n": 65536,
+      "k": 24,
+      "order": [
+        "color",
+        "identity"
+      ],
+      "methods": {
+        "color": {
+          "utc": "2026-11-22T08:20:32.738795+00:00",
+          "contexts_before": {
+            "external_compute_contexts": 0,
+            "external_allocated_MiB": 0,
+            "gpu_model_clock_MHz_memory_used_MiB": "NVIDIA H100 PCIe, 1755, 551"
+          },
+          "contexts_after": {
+            "external_compute_contexts": 0,
+            "external_allocated_MiB": 0,
+            "gpu_model_clock_MHz_memory_used_MiB": "NVIDIA H100 PCIe, 1755, 729"
+          },
+          "graph": {
+            "full_nodes": 1088092,
+            "full_edges": 1541898,
+            "raw_directed_rows": 3083796,
+            "bfs_start_original_id": 0,
+            "used_largest_component_fallback": false,
+            "bfs_component_nodes": 1087562,
+            "prefixes_sha256": {
+              "4096": "8819bdba9aad2a8e3815dfee9ffbed0370e1948622b651ada84fb6713cfd3dc5",
+              "16384": "94f5eec3463af1a76e697189ae410301fd6e1efc5a7a4bfebc2eaf7c5fc5ff0c",
+              "65536": "86d45bbaebeea6f6c36cc29eb0435f3703fe8887ba6188b3a3f67b7113314834"
+            },
+            "prefix_edges": 92108,
+            "degree_min": 1,
+            "degree_max": 7,
+            "normalized_csr_sha256": "58c8a2d0cbe2fc74a6f682d7fc4e1440533b31b4b527d752a50621e4c882fe3b"
+          },
+          "method": "color",
+          "columns": 1349,
+          "blocks_per_bank": 22,
+          "width": 64,
+          "cold_gpu": {
+            "seconds": 0.16515080444514751,
+            "censored": false,
+            "completed_blocks": 44,
+            "planned_blocks": 44,
+            "resident_input_MiB": 3.859375,
+            "peak_allocated_MiB": 158.41796875,
+            "peak_additional_MiB": 154.55859375
+          },
+          "cold_total_seconds": 3.0055358093231916,
+          "cpu_common_graph_seconds": 0.7369139073416591,
+          "cpu_coloring_seconds": 2.0970027912408113,
+          "gpu_staging_seconds": 0.004711190238595009,
+          "process_rss_cold": {
+            "initial_MiB": 941.203125,
+            "peak_MiB": 1025.23828125,
+            "increment_MiB": 84.03515625
+          },
+          "verify_coloring_seconds": 1.966334250755608,
+          "ordered_pairs_checked_in_balls": 134088086,
+          "color_sha256": "e95587736c314172438e75eeb07a03708f7db2a808f500fc1d6d371556858b3f",
+          "resident_trials": [
+            {
+              "seconds": 0.16486179549247026,
+              "censored": false,
+              "completed_blocks": 44,
+              "planned_blocks": 44,
+              "resident_input_MiB": 3.859375,
+              "peak_allocated_MiB": 158.41796875,
+              "peak_additional_MiB": 154.55859375
+            },
+            {
+              "seconds": 0.16442451626062393,
+              "censored": false,
+              "completed_blocks": 44,
+              "planned_blocks": 44,
+              "resident_input_MiB": 3.859375,
+              "peak_allocated_MiB": 158.41796875,
+              "peak_additional_MiB": 154.55859375
+            },
+            {
+              "seconds": 0.1648051245138049,
+              "censored": false,
+              "completed_blocks": 44,
+              "planned_blocks": 44,
+              "resident_input_MiB": 3.859375,
+              "peak_allocated_MiB": 158.41796875,
+              "peak_additional_MiB": 154.55859375
+            }
+          ],
+          "resident_median_seconds": 0.1648051245138049
+        },
+        "identity": {
+          "utc": "2026-11-22T08:20:38.419742+00:00",
+          "contexts_before": {
+            "external_compute_contexts": 0,
+            "external_allocated_MiB": 0,
+            "gpu_model_clock_MHz_memory_used_MiB": "NVIDIA H100 PCIe, 1755, 551"
+          },
+          "contexts_after": {
+            "external_compute_contexts": 0,
+            "external_allocated_MiB": 0,
+            "gpu_model_clock_MHz_memory_used_MiB": "NVIDIA H100 PCIe, 1755, 729"
+          },
+          "graph": {
+            "full_nodes": 1088092,
+            "full_edges": 1541898,
+            "raw_directed_rows": 3083796,
+            "bfs_start_original_id": 0,
+            "used_largest_component_fallback": false,
+            "bfs_component_nodes": 1087562,
+            "prefixes_sha256": {
+              "4096": "8819bdba9aad2a8e3815dfee9ffbed0370e1948622b651ada84fb6713cfd3dc5",
+              "16384": "94f5eec3463af1a76e697189ae410301fd6e1efc5a7a4bfebc2eaf7c5fc5ff0c",
+              "65536": "86d45bbaebeea6f6c36cc29eb0435f3703fe8887ba6188b3a3f67b7113314834"
+            },
+            "prefix_edges": 92108,
+            "degree_min": 1,
+            "degree_max": 7,
+            "normalized_csr_sha256": "58c8a2d0cbe2fc74a6f682d7fc4e1440533b31b4b527d752a50621e4c882fe3b"
+          },
+          "method": "identity",
+          "columns": 65536,
+          "blocks_per_bank": 1024,
+          "width": 64,
+          "cold_gpu": {
+            "seconds": 7.288092344999313,
+            "censored": false,
+            "completed_blocks": 2048,
+            "planned_blocks": 2048,
+            "resident_input_MiB": 3.859375,
+            "peak_allocated_MiB": 158.41796875,
+            "peak_additional_MiB": 154.55859375
+          },
+          "cold_total_seconds": 8.041652901098132,
+          "cpu_common_graph_seconds": 0.7501962967216969,
+          "cpu_coloring_seconds": 0.0,
+          "gpu_staging_seconds": 0.0017150212079286575,
+          "process_rss_cold": {
+            "initial_MiB": 928.859375,
+            "peak_MiB": 1062.33984375,
+            "increment_MiB": 133.48046875
+          },
+          "verify_coloring_seconds": 0.0,
+          "ordered_pairs_checked_in_balls": null,
+          "color_sha256": null,
+          "resident_trials": [
+            {
+              "seconds": 7.2993403589352965,
+              "censored": false,
+              "completed_blocks": 2048,
+              "planned_blocks": 2048,
+              "resident_input_MiB": 3.859375,
+              "peak_allocated_MiB": 158.41796875,
+              "peak_additional_MiB": 154.55859375
+            },
+            {
+              "seconds": 7.285543153062463,
+              "censored": false,
+              "completed_blocks": 2048,
+              "planned_blocks": 2048,
+              "resident_input_MiB": 3.859375,
+              "peak_allocated_MiB": 158.41796875,
+              "peak_additional_MiB": 154.55859375
+            },
+            {
+              "seconds": 7.2996327839791775,
+              "censored": false,
+              "completed_blocks": 2048,
+              "planned_blocks": 2048,
+              "resident_input_MiB": 3.859375,
+              "peak_allocated_MiB": 158.41796875,
+              "peak_additional_MiB": 154.55859375
+            }
+          ],
+          "resident_median_seconds": 7.2993403589352965
+        }
+      },
+      "verification": {
+        "crosschecked_sample_roots": 128,
+        "root_sample_sha256": "5a39e8273a6390b40a00dc67b54dba048fac2b43d83256ffead04d0a89fdb764",
+        "maximum_field_error": 2.220446049250313e-16,
+        "sampled_errors": [
+          0.0,
+          1.1102230246251565e-16
+        ],
+        "full_bank_errors": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  ],
+  "finished_utc": "2026-11-22T08:21:08.509549+00:00"
+}

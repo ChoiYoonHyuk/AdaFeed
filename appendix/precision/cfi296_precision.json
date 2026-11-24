@@ -1,0 +1,211 @@
+{
+  "source_sha256": "6975d172d27aedcdf4eb2c747450ede7928c111caeb2689fbc67e6b62fbd5562",
+  "pair_zero_based": 296,
+  "n": 62,
+  "independent_relabelings": 16,
+  "permutation_seed": 20261122,
+  "device": "NVIDIA H100 PCIe",
+  "torch_version": "2.11.0+cu128",
+  "cuda_version": "12.8",
+  "allow_tf32": false,
+  "float32_matmul_precision": "highest",
+  "deterministic": true,
+  "exact": [
+    {
+      "maximum_degree": 5,
+      "maximum_spatial_scaled_row_sum": 10,
+      "selected_roots": 8,
+      "denominator": 1024,
+      "selected_scaled_diagonal_by_mode": {
+        "spatial": [
+          199319057
+        ],
+        "local": [
+          304737745
+        ]
+      },
+      "score_by_mode": {
+        "spatial": 1557180.1328125,
+        "local": 2380763.6328125
+      }
+    },
+    {
+      "maximum_degree": 5,
+      "maximum_spatial_scaled_row_sum": 10,
+      "selected_roots": 8,
+      "denominator": 1024,
+      "selected_scaled_diagonal_by_mode": {
+        "spatial": [
+          199317009
+        ],
+        "local": [
+          304737745
+        ]
+      },
+      "score_by_mode": {
+        "spatial": 1557164.1328125,
+        "local": 2380763.6328125
+      }
+    }
+  ],
+  "results": {
+    "torch.float32": {
+      "total_mask_mismatches": 0,
+      "max_a2_error": 0.0,
+      "max_a9_error": 0.0,
+      "readouts": {
+        "spatial": {
+          "identity_graph_scores": [
+            1557180.125,
+            1557164.125
+          ],
+          "score_ranges_by_graph": [
+            [
+              1557180.125,
+              1557180.125
+            ],
+            [
+              1557164.125,
+              1557164.125
+            ]
+          ],
+          "gap_by_ordering": [
+            16.0,
+            16.0,
+            16.0,
+            16.0,
+            16.0,
+            16.0,
+            16.0,
+            16.0,
+            16.0,
+            16.0,
+            16.0,
+            16.0,
+            16.0,
+            16.0,
+            16.0,
+            16.0,
+            16.0
+          ],
+          "max_selected_diagonal_error": 0.0009765625
+        },
+        "local": {
+          "identity_graph_scores": [
+            2380763.5,
+            2380763.5
+          ],
+          "score_ranges_by_graph": [
+            [
+              2380763.5,
+              2380763.5
+            ],
+            [
+              2380763.5,
+              2380763.5
+            ]
+          ],
+          "gap_by_ordering": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_selected_diagonal_error": 0.0166015625
+        }
+      }
+    },
+    "torch.float64": {
+      "total_mask_mismatches": 0,
+      "max_a2_error": 0.0,
+      "max_a9_error": 0.0,
+      "readouts": {
+        "spatial": {
+          "identity_graph_scores": [
+            1557180.1328125,
+            1557164.1328125
+          ],
+          "score_ranges_by_graph": [
+            [
+              1557180.1328125,
+              1557180.1328125
+            ],
+            [
+              1557164.1328125,
+              1557164.1328125
+            ]
+          ],
+          "gap_by_ordering": [
+            16.0,
+            16.0,
+            16.0,
+            16.0,
+            16.0,
+            16.0,
+            16.0,
+            16.0,
+            16.0,
+            16.0,
+            16.0,
+            16.0,
+            16.0,
+            16.0,
+            16.0,
+            16.0,
+            16.0
+          ],
+          "max_selected_diagonal_error": 0.0
+        },
+        "local": {
+          "identity_graph_scores": [
+            2380763.6328125,
+            2380763.6328125
+          ],
+          "score_ranges_by_graph": [
+            [
+              2380763.6328125,
+              2380763.6328125
+            ],
+            [
+              2380763.6328125,
+              2380763.6328125
+            ]
+          ],
+          "gap_by_ordering": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_selected_diagonal_error": 0.0
+        }
+      }
+    }
+  }
+}

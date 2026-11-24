@@ -1,0 +1,43 @@
+{
+  "graphs": 41127,
+  "atoms": 1049163,
+  "undirected_edges": 1129688,
+  "carbon_without_mark_within_two": 245070,
+  "exact_distance_three": 127090,
+  "max_absolute_error": 4.163336342344337e-17,
+  "second_nonzeros": 4265972,
+  "third_nonzeros": 5965092,
+  "device": "NVIDIA H100 PCIe",
+  "torch_version": "2.11.0+cu128",
+  "trials": [
+    {
+      "seconds": 0.0018163295462727547,
+      "extra_torch_MiB": 487.98974609375,
+      "external_contexts": 0
+    },
+    {
+      "seconds": 0.0017638104036450386,
+      "extra_torch_MiB": 487.98974609375,
+      "external_contexts": 0
+    },
+    {
+      "seconds": 0.001762337051331997,
+      "extra_torch_MiB": 487.98974609375,
+      "external_contexts": 0
+    },
+    {
+      "seconds": 0.0017741536721587181,
+      "extra_torch_MiB": 487.98974609375,
+      "external_contexts": 0
+    },
+    {
+      "seconds": 0.001755344681441784,
+      "extra_torch_MiB": 487.98974609375,
+      "external_contexts": 0
+    }
+  ],
+  "median_seconds": 0.0017638104036450386,
+  "peak_MiB": 487.98974609375,
+  "source_sha256": "6a7c05bc49a4b484d66233aa5dd040407c34ae6defacbf5bec1ac52421fd7f48",
+  "protocol_sha256": "854c0c8ca7098b37930d8744bc0b53fef714a6081f3870711c8bdc2e725f9d69"
+}
